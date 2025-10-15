@@ -1,1 +1,116 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Syne", sans-serif;
+}
+
+/* 🔹 Base hidden state */
+[appScrollAnimate] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+/* 🔹 When visible */
+[appScrollAnimate].show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 🌙 Global Dark Theme */
+body.dark-theme {
+  background-color: #121212 !important;
+  color: #eaeaea;
+
+  /* Fix: Added dot before .content */
+  .dark,
+  .content {
+    background: linear-gradient(135deg, #1a1625, #2a1f3d) !important;
+  }
+
+  .card {
+    background-color: #121212 !important;
+  }
+
+  /* 🌟 Header */
+  .portfolio-header {
+    border-color: rgba(255, 255, 255, 0.05);
+
+    .nav-links a {
+      color: #8b8a91 !important;
+      backdrop-filter: blur(10px);
+      &.active,
+      &:hover {
+        color: #e8e8f0 !important;
+      }
+    }
+
+    .talk-btn {
+      background: linear-gradient(90deg, #2563eb, #9333ea);
+    }
+
+    .mobile-menu {
+      background: #1e1e1e;
+
+      a {
+        color: #ddd;
+
+        &:hover {
+          background: rgba(124, 58, 237, 0.1);
+        }
+      }
+    }
+  }
+
+  /* 🧍 Card Component */
+  .app-1,
+  .example-card {
+    background-color: #1e1e1e !important;
+    color: #eee;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  /* 📄 Content area components (Home, Portfolio, About, Resume) */
+  .side-content {
+    background-color: transparent;
+    color: #eaeaea;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    span {
+      color: #eaeaea;
+    }
+
+    .btn-main {
+      background: linear-gradient(90deg, #7c3aed, #9333ea);
+      color: #fff;
+    }
+
+    .btn-outline {
+      border: 1px solid #8b8a91;
+      color: #e8e8f0;
+      border-radius: 20px;
+      font-size: 20px;
+      padding: 20px !important;
+
+      &:hover {
+        background: rgba(124, 58, 237, 0.1);
+      }
+    }
+  }
+
+  app-footer {
+    background: #1a1625;
+    color: #bbb;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}

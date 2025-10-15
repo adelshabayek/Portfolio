@@ -1,0 +1,100 @@
+.hero-section {
+  font-family: "Syne", sans-serif;
+  padding-top: 30px;
+  .meet {
+    width: 120px;
+    line-height: 1;
+    color: #666;
+    margin-bottom: 25px;
+    text-align: center;
+    p {
+      border: 0.1px solid #ccc;
+      padding: 10px 15px;
+      border-radius: 25px;
+      font-size: 13px;
+
+      i {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .heading {
+    width: 40rem;
+    margin-bottom: 20px;
+    h1 {
+      font-size: 60px;
+
+      color: #8b55cb;
+      line-height: 1.3;
+      font-family: "Syne", sans-serif;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: 50px;
+      font-weight: bold;
+      color: #8b55cb;
+      line-height: 1.3;
+      font-family: "Syne", sans-serif;
+    }
+  }
+
+  .btn-outline {
+    position: relative;
+    overflow: hidden;
+    text-transform: none;
+    border: 1px solid #a1a1a1;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 25px 20px !important;
+    font-family: "Syne", sans-serif;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #444;
+    i {
+      font-size: 13px;
+      margin-left: 5px;
+    }
+
+    /* Inner layers for animation */
+    .front,
+    .back {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease;
+      line-height: 1;
+      font-family: "Syne", sans-serif;
+    }
+
+    .front {
+      transform: translateY(0);
+      opacity: 1;
+      align-content: center;
+      align-items: center;
+      padding-top: 19px;
+    }
+
+    .back {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+
+    /* ✨ Hover animation like social buttons */
+    &:hover {
+      .front {
+        transform: translateY(-100%);
+        opacity: 0;
+        line-height: 1;
+      }
+
+      .back {
+        transform: translateY(0);
+        opacity: 1;
+        line-height: 1;
+
+        padding-bottom: 40px;
+      }
+    }
+  }
+}

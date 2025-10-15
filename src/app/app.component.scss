@@ -1,0 +1,180 @@
+:host {
+  display: block;
+  font-family: "Syne", sans-serif;
+  color: #333;
+ background: linear-gradient(135deg, #f5f3ff, #ece9ff);
+
+}
+
+.content {
+ 
+  position: relative;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(124, 58, 237, 0.15), transparent);
+    z-index: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  &::before {
+    width: 300px;
+    height: 300px;
+    top: 500px;
+    left: -50px;
+  }
+
+  &::after {
+    width: 400px;
+    height: 400px;
+    top: 50px;
+    right: -50px;
+  }
+
+  
+}
+
+/* 🧭 FIXED SIDE CARD (Desktop) */
+.side-card {
+  position: relative;
+
+  .app-1 {
+    position: fixed;
+    top: 30px;
+    left: 60px;
+    width: 20rem;
+    max-width: 90%;
+    z-index: 10;
+  }
+}
+
+/* 🌟 HEADER + SCROLLABLE CONTENT */
+.side-content {
+  position: relative;
+  margin-left: 25rem;
+  padding-right: 2rem;
+
+  .app-2 {
+    position: fixed;
+    top:30px;
+    left: 25rem;
+    right: 0;
+    width: calc(100% - 28rem);
+    z-index: 999;
+  }
+
+  .sections {
+
+    margin-top: 90px; /* space for header */
+    text-align: left;
+    justify-content: left;
+    width: calc(100% - 3rem);
+
+    .home , .about, .resume , .portfolio , .contact {
+      margin-bottom: 70px;
+    }
+  }
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 1200px) {
+  .side-card .app-1 {
+    left: 30px;
+    width: 18rem;
+  }
+
+  .side-content {
+    margin-left: 22rem;
+
+    .app-2 {
+      left: 22rem;
+      width: calc(100% - 22rem);
+    }
+  }
+}
+
+/* 📱 Tablets (≤991px) */
+@media (max-width: 991px) {
+  .side-card .app-1 {
+    position: relative;
+    top: auto;
+    left: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .side-content {
+    margin-left: 0;
+    padding: 0 1rem;
+
+    .app-2 {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      left: 0;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+    }
+
+    .sections {
+      margin-top: 80px;
+    }
+  }
+}
+
+/* 📱 Mobile (≤768px) */
+@media (max-width: 768px) {
+  .side-card .app-1 {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto 1rem auto;
+  }
+
+  .side-content {
+    margin-left: 0;
+    padding: 0 0.5rem;
+
+    .app-2 {
+      position: fixed;
+      bottom: 0;
+      top: auto;
+      width: 100%;
+      left: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.9);
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .sections {
+      margin-bottom: 80px; // space for bottom header
+      margin-top: 10px;
+    }
+  }
+}
+
+/* 📱 Small phones (≤576px) */
+@media (max-width: 576px) {
+  .side-card .app-1 {
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .side-content {
+    .app-2 {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+}
+
+
+// directive style 
+

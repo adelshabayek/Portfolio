@@ -1,0 +1,40 @@
+<header class="portfolio-header" [class.scrolled]="scrolled">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <!-- 🧭 Navigation -->
+    <nav class="nav-links d-none d-md-flex align-items-center gap-3">
+      <a (click)="scrollTo('home')" [class.active]="activeSection === 'home'">Home</a>
+      <a  (click)="scrollTo('about')" [class.active]="activeSection === 'about'">About</a>
+      <a  (click)="scrollTo('resume')" [class.active]="activeSection === 'resume'">Resume</a>
+      <a  (click)="scrollTo('portfolio')" [class.active]="activeSection === 'portfolio'">Portfolio</a>
+      <a  (click)="scrollTo('contact')" [class.active]="activeSection === 'contact'">Contact</a>
+    </nav>
+
+    <!-- 💬 Right Side Buttons -->
+    <div class="action-buttons d-flex align-items-center gap-2">
+      <button
+        mat-icon-button
+        color="primary"
+        matTooltip="Toggle theme"
+        (click)="toggleTheme()"
+        class="theme-btn"
+      >
+        <mat-icon *ngIf="!isDark" class="text-primary">dark_mode</mat-icon>
+        <mat-icon *ngIf="isDark" class="text-warning">light_mode</mat-icon>
+      </button>
+
+      <button mat-raised-button  class="talk-btn">
+        <mat-icon class="me-1">chat</mat-icon>
+        Let’s Talk
+      </button>
+    </div>
+  </div>
+
+  <!-- 📱 Bottom mobile nav -->
+  <nav class="mobile-nav d-md-none">
+    <button mat-icon-button (click)="scrollTo('home')" [class.active]="activeSection === 'home'"><mat-icon>home</mat-icon></button>
+    <button mat-icon-button (click)="scrollTo('about')" [class.active]="activeSection === 'about'"><mat-icon>person</mat-icon></button>
+    <button mat-icon-button (click)="scrollTo('resume')" [class.active]="activeSection === 'resume'"><mat-icon>description</mat-icon></button>
+    <button mat-icon-button (click)="scrollTo('portfolio')" [class.active]="activeSection === 'portfolio'"><mat-icon>work</mat-icon></button>
+    <button mat-icon-button routerLink="/contact" routerLinkActive="active"><mat-icon>mail</mat-icon></button>
+  </nav>
+</header>

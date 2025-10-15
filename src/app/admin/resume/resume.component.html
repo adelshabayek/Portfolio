@@ -1,0 +1,14 @@
+<!-- 🎓 EDUCATION & EXPERIENCE -->
+<section class="resume-section">
+  <div class="container">
+    <h2 class="section-title text-center">Education & Practical Experience</h2>
+
+    <div class="timeline mt-4">
+      <div class="timeline-item" *ngFor="let item of resume">
+        <h5>{{ item.year }}</h5>
+        <h4>{{ item.title }}</h4>
+        <p>{{ item.place }}</p>
+      </div>
+    </div>
+  </div>
+</section>

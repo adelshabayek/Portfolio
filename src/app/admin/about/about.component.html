@@ -1,0 +1,39 @@
+<section class="about-section" *ngIf="aboutData">
+  <div class="meet">
+    <p>
+      <span><i class="pi pi-bookmark-fill"></i></span> {{ aboutData.greeting }}
+    </p>
+  </div>
+
+  <h1>{{aboutData.title}}</h1>
+
+  <div class="row pt-3">
+    <div class="col-md-8">
+      <p class="disc pe-3">
+        {{aboutData.description1}}
+        <br>
+        {{aboutData.description2}}
+        <br>
+        {{aboutData.description3}}
+      </p>
+    </div>
+    <div class="col-md-4">
+      <div class="info">
+        <h5>Name</h5>
+        <p>{{aboutData.name}}</p>
+      </div>
+      <div class="info">
+        <h5>Whatsapp</h5>
+        <p>{{aboutData.whatsapp}}</p>
+      </div>
+      <div class="info">
+        <h5>Email</h5>
+        <p>{{aboutData.email}}</p>
+      </div>
+      <div class="info">
+        <h5>Location</h5>
+        <p>{{aboutData.location}}</p>
+      </div>
+    </div>
+  </div>
+</section>

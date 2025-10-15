@@ -1,0 +1,18 @@
+<!-- 💼 PORTFOLIO SECTION -->
+<section class="portfolio-section">
+  <div class="container">
+    <h2 class="section-title text-center">Check out my featured projects</h2>
+
+    <div class="row g-4 mt-4">
+      <div class="col-sm-6 col-lg-4" *ngFor="let project of projects">
+        <div class="project-card">
+          <img [src]="project.image" alt="{{project.title}}" />
+          <div class="overlay">
+            <h5>{{ project.title }}</h5>
+            <p>{{ project.category }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

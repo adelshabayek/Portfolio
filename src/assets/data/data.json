@@ -1,0 +1,137 @@
+{
+  "hero": {
+    "greeting": "Let's Meet",
+    "name": "I'm Adel Shabayek",
+    "title": "Front-End Developer | Angular CLI | Building Responsive & Scalable Web UI",
+    "object": "Motivated and detail-oriented Front-End Developer",
+    "buttonText": "My Works"
+  },
+  "about": {
+    "greeting": "About Me",
+    "title": "Turning complex problems into simple design",
+    "description1": "Hi, I’m Adel Shabayek, a dedicated Front-End Developer specializing in Angular and modern web technologies. I build dynamic, high-performance, and scalable web applications using Angular, TypeScript, PrimeNG, and Bootstrap.",
+    "description2": "With a strong eye for design and deep technical expertise, I craft responsive, accessible, and visually polished interfaces that deliver seamless user experiences. Passionate about clean architecture and performance optimization, I transform complex requirements into elegant, maintainable digital solutions.",
+    "description3": "Passionate about clean architecture and performance optimization, I transform complex requirements into elegant, maintainable digital solutions.",
+    "name" : "Adel Shabayek",
+    "whatsapp" : "+201020417971",
+    "email" : "Shabayekadel15@gmail.com",
+    "location": "North Sinai, Egypt",
+    "highlights": [
+      { "icon": "pi pi-code", "text": "Angular 17, TypeScript, PrimeNG" },
+      { "icon": "pi pi-desktop", "text": "Responsive UI / UX Design" },
+      { "icon": "pi pi-cog", "text": "Reusable Component Architecture" },
+      { "icon": "pi pi-bolt", "text": "Performance Optimization" }
+    ],
+    "quote": "\"Code is not just about syntax — it’s about storytelling and precision.\""
+  },
+
+  "name": "Adel Akram Shabayek",
+  "title": "Front-End Developer | Angular 16+",
+  "location": "North Sinai, Egypt",
+  "email": "Shabayekadel15@gmail.com",
+  "phone": "+201020417971",
+  "linkedin": "https://www.linkedin.com/in/adel-shabayek",
+  "github": "https://github.com/adelshabayek",
+  "portfolio": "https://adelshabayek.vercel.app/",
+  "objective": "Front-End Developer with professional experience in Angular, Angular Material, PrimeNG, Bootstrap, and TypeScript. Skilled in building dynamic dashboards, responsive UIs, and CRUD applications. Strong collaborator with a focus on performance, accessibility, and clean code.",
+
+  "skills": {
+    "languages": [
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "SCSS / LESS",
+      "AJAX / JSON"
+    ],
+    "frameworks": [
+      "Angular 16+",
+      "Angular Material",
+      "PrimeNG",
+      "RxJS",
+      "Bootstrap"
+    ],
+    "tools": ["Git / GitHub", "VS Code", "NPM"],
+    "other": ["Responsive Design", "REST API Integration", "Reactive Forms"]
+  },
+
+  "projects": [
+    {
+      "name": "Fact Café",
+      "role": "Front-End Developer",
+      "type": "Full-Time, Remote",
+      "description": [
+        "Designed with modern HTML, CSS, and JavaScript, offering a seamless, interactive interface.",
+        "Built a categorized menu for easy exploration of drinks and desserts.",
+        "Fully responsive design across all devices."
+      ],
+      "url": "https://fact-menu.vercel.app/"
+    },
+    {
+      "name": "English Teacher",
+      "role": "Front-End Developer",
+      "type": "Full-Time, Remote",
+      "description": [
+        "Developed an interactive website for lesson booking and communication.",
+        "Modern, responsive design with high performance."
+      ],
+      "url": "https://mradelshabayek.vercel.app/"
+    },
+    {
+      "name": "Acadez Platform",
+      "role": "Front-End Developer",
+      "type": "Full-Time, Remote",
+      "description": [
+        "Built a multilingual online learning platform (Arabic & English).",
+        "Integrated smart search and student-teacher communication features."
+      ],
+      "url": "https://acadez.vercel.app/"
+    },
+    {
+      "name": "Elbiek Grilles",
+      "role": "Front-End Developer",
+      "type": "Part-Time, Remote",
+      "description": [
+        "Developed a smooth bilingual restaurant website.",
+        "Integrated Microsoft Form for customer feedback."
+      ],
+      "url": "https://elbiekgrills.netlify.app/"
+    },
+    {
+      "name": "Arish University",
+      "role": "Front-End Developer",
+      "type": "Full-Time, Hybrid",
+      "description": [
+        "Built systems for university management using Vue.js, TypeScript, and Bootstrap5.",
+        "Collaborated with a development team to meet project deadlines."
+      ],
+      "url": "https://aru.edu.eg/"
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "Arish University",
+      "degree": "Bachelor of Arts and Education – English Language and Literature",
+      "year": "2019 – 2023"
+    },
+    {
+      "institution": "Udacity",
+      "degree": "Front-End Web Development Nanodegree",
+      "year": "2019 – 2020"
+    }
+  ],
+
+  "personal": {
+    "problemSolver": "Skilled in finding creative, innovative solutions to complex challenges.",
+    "adaptable": "Quickly adjusts to new technologies and project requirements.",
+    "detailOriented": "Focused on delivering clean, efficient, high-quality code.",
+    "communication": "Strong written and verbal communication for effective collaboration.",
+    "timeManagement": "Capable of prioritizing tasks and meeting deadlines efficiently."
+  },
+
+  "languages": {
+    "arabic": "Native",
+    "english": "Excellent"
+  }
+}

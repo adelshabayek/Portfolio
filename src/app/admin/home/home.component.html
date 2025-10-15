@@ -1,0 +1,33 @@
+<section
+  class="hero-section text-left d-flex align-items-left justify-content-left mb-4"
+>
+  <div class="" *ngIf="heroData">
+    <div class="meet">
+      <p>
+        <span><i class="pi pi-bookmark-fill"></i></span> {{ heroData.greeting }}
+      </p>
+    </div>
+
+    <div class="heading">
+      <h1 class="hero-title">
+        {{ heroData.name }}
+      </h1>
+   
+      <h2>{{ heroData.object }}</h2>
+    </div>
+    <div class="example-button-row pt-4">
+      <button
+        mat-stroked-button
+        class="btn-outline"
+        (click)="scrollTo('portfolio')"
+      >
+        <span class="front"
+          >{{ heroData.buttonText }} <i class="pi pi-th-large"></i
+        ></span>
+        <span class="back"
+          >{{ heroData.buttonText }} <i class="pi pi-th-large"></i
+        ></span>
+      </button>
+    </div>
+  </div>
+</section>
