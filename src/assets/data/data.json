@@ -12,15 +12,15 @@
     "description1": "Hi, I’m Adel Shabayek, a dedicated Front-End Developer specializing in Angular and modern web technologies. I build dynamic, high-performance, and scalable web applications using Angular, TypeScript, PrimeNG, and Bootstrap.",
     "description2": "With a strong eye for design and deep technical expertise, I craft responsive, accessible, and visually polished interfaces that deliver seamless user experiences. Passionate about clean architecture and performance optimization, I transform complex requirements into elegant, maintainable digital solutions.",
     "description3": "Passionate about clean architecture and performance optimization, I transform complex requirements into elegant, maintainable digital solutions.",
-    "name" : "Adel Shabayek",
-    "whatsapp" : "+201020417971",
-    "email" : "Shabayekadel15@gmail.com",
+    "name": "Adel Shabayek",
+    "whatsapp": "+201020417971",
+    "email": "Shabayekadel15@gmail.com",
     "location": "North Sinai, Egypt",
-    "highlights": [
-      { "icon": "pi pi-code", "text": "Angular 17, TypeScript, PrimeNG" },
-      { "icon": "pi pi-desktop", "text": "Responsive UI / UX Design" },
-      { "icon": "pi pi-cog", "text": "Reusable Component Architecture" },
-      { "icon": "pi pi-bolt", "text": "Performance Optimization" }
+    "skills": [
+      { "icon": "pi pi-code", "text": "Development" },
+      { "icon": "pi pi-cart-plus", "text": "eCommerce" },
+      { "icon": "pi pi-globe", "text": "SEO" },
+      { "icon": "pi pi-pencil", "text": "Design" }
     ],
     "quote": "\"Code is not just about syntax — it’s about storytelling and precision.\""
   },

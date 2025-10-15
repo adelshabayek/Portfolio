@@ -1,39 +1,51 @@
 <section class="about-section" *ngIf="aboutData">
-  <div class="meet">
+  <div class="meet" appScrollAnimate>
     <p>
       <span><i class="pi pi-bookmark-fill"></i></span> {{ aboutData.greeting }}
     </p>
   </div>
 
-  <h1>{{aboutData.title}}</h1>
+  <h1 appScrollAnimate>{{ aboutData.title }}</h1>
+
+  <!-- 💎 Skills Icons Section -->
+    <div class="skills-grid text-center mb-5" >
+      <div class="skill-item" appScrollAnimate *ngFor="let skill of aboutData.skills">
+        <i [class]="skill.icon + ' skill-icon'"></i>
+        <p>{{ skill.text }}</p>
+      </div>
+    </div>
 
   <div class="row pt-3">
     <div class="col-md-8">
-      <p class="disc pe-3">
-        {{aboutData.description1}}
-        <br>
-        {{aboutData.description2}}
-        <br>
-        {{aboutData.description3}}
+      <p class="disc pe-3" appScrollAnimate>
+        {{ aboutData.description1 }}
+        <br />
+        {{ aboutData.description2 }}
+        <br />
+        {{ aboutData.description3 }}
       </p>
     </div>
+
     <div class="col-md-4">
-      <div class="info">
-        <h5>Name</h5>
-        <p>{{aboutData.name}}</p>
-      </div>
-      <div class="info">
-        <h5>Whatsapp</h5>
-        <p>{{aboutData.whatsapp}}</p>
-      </div>
-      <div class="info">
-        <h5>Email</h5>
-        <p>{{aboutData.email}}</p>
-      </div>
-      <div class="info">
-        <h5>Location</h5>
-        <p>{{aboutData.location}}</p>
+      <div
+        class="info"
+        *ngFor="let field of ['name', 'whatsapp', 'email', 'location']"
+      >
+        <h5 appScrollAnimate>{{ field | titlecase }}</h5>
+        <p appScrollAnimate> {{ aboutData[field] }}</p>
       </div>
     </div>
+
+    <!-- let's work  -->
+    <div class="text-start pt-3 mb-1" appScrollAnimate>
+      <button mat-raised-button class="talk-btn">
+        <span class="front2">Contact Me</span>
+        <span class="back2">Contact Me</span>
+      </button>
+    </div>
+
+    
+
+    
   </div>
 </section>

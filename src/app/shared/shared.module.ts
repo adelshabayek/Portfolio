@@ -23,6 +23,7 @@ import { ScrollAnimateDirective } from '../core/directives/scroll-animate.direct
     HeaderComponent,
     FooterComponent,
     CardComponent,
+    
   ],
   imports: [
     CommonModule,
@@ -36,11 +37,13 @@ import { ScrollAnimateDirective } from '../core/directives/scroll-animate.direct
     MatCardModule,
     ButtonModule,
     CardModule,
+    
 
   ],
   exports: [ HeaderComponent,
     FooterComponent,
       CardComponent,
+      
 
     ]
 })

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { ProfileService } from '../../core/directives/services/profile.service';
+import { ProfileService } from '../../core/services/profile.service';
+
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+  styleUrls: ['./about.component.scss'] // ✅ should be `styleUrls` not `styleUrl`
 })
 export class AboutComponent {
   

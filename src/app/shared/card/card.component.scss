@@ -119,17 +119,7 @@
   }
 }
 
-/* 🌙 Dark mode version */
-body.dark-theme {
-  .talk-btn {
-    background: linear-gradient(90deg, #a855f7, #7e22ce);
-    box-shadow: 0 3px 12px rgba(168, 85, 247, 0.3);
 
-    &:hover {
-      box-shadow: 0 6px 20px rgba(168, 85, 247, 0.5);
-    }
-  }
-}
 
 }
 

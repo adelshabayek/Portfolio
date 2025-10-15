@@ -13,6 +13,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 // 👇 Import PrimeNG module
 import { CardModule } from 'primeng/card';
+import { ScrollAnimateDirective } from '../core/directives/scroll-animate.directive';
 
 @NgModule({
   declarations: [
@@ -20,11 +21,11 @@ import { CardModule } from 'primeng/card';
     AboutComponent,
     ResumeComponent,
     PortfolioComponent,
-
+ScrollAnimateDirective
   ],
   imports: [
     CommonModule,
-    SharedModule,
+
     AdminRoutingModule,
     MatIconModule,
     MatDividerModule,
@@ -36,7 +37,7 @@ import { CardModule } from 'primeng/card';
     AboutComponent,
     ResumeComponent,
     PortfolioComponent,
-
+ScrollAnimateDirective
   ]
 })
 export class AdminModule { }
