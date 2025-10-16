@@ -14,7 +14,8 @@ import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { ScrollAnimateDirective } from './core/directives/scroll-animate.directive';
 import { HttpClientModule } from '@angular/common/http';
-
+import { CarouselModule } from 'primeng/carousel';
+import { RatingModule } from 'primeng/rating';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     ButtonModule,
     CardModule,
-    HttpClientModule
+    HttpClientModule,
+    CarouselModule,
+    RatingModule
   ],
   providers: [
     provideAnimationsAsync()

@@ -1,13 +1,59 @@
-<!-- 🎓 EDUCATION & EXPERIENCE -->
-<section class="resume-section">
-  <div class="container">
-    <h2 class="section-title text-center">Education & Practical Experience</h2>
+<section class="resume-section" *ngIf="resumeData">
+  <!-- 💎 Favourite Tools -->
+  <div class="meet">
+    <p>
+      <span><i class="pi pi-bookmark-fill"></i></span> {{ resumeData.title }}
+    </p>
+  </div>
+  <div class="resume-box">
+    <h1 class="mb-4">{{ resumeData.tooleduex }}</h1>
+    <p>{{ resumeData.text }}</p>
+  </div>
 
-    <div class="timeline mt-4">
-      <div class="timeline-item" *ngFor="let item of resume">
-        <h5>{{ item.year }}</h5>
-        <h4>{{ item.title }}</h4>
-        <p>{{ item.place }}</p>
+  <!-- 💼 Experience -->
+  <div class="experience-section" scrollAnimate>
+    <h2><i class="pi pi-briefcase"></i> Work experience</h2>
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let exp of resumeData.experiences">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>{{ exp.title }}</h4>
+          <h5>{{ exp.company }}</h5>
+          <p class="period">{{ exp.period }}</p>
+
+          <ul class="details">
+            <li *ngFor="let detail of exp.details">{{ detail }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🎓 Education -->
+  <div class="education-section" scrollAnimate>
+    <h2><i class="pi pi-book"></i> My Education</h2>
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let edu of resumeData.education">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h4>{{ edu.degree }}</h4>
+          <h5>{{ edu.institution }}</h5>
+          <p class="period">{{ edu.period }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool-section">
+    <h2 class="mb-5">{{ resumeData.toolTitle }}</h2>
+    <div class="tools-grid">
+      <div
+        class="tool-card"
+        *ngFor="let tool of resumeData.tools"
+        scrollAnimate
+      >
+        <img [src]="tool.icon" [alt]="tool.name" class="tool-icon" />
+        <p>{{ tool.name }}</p>
       </div>
     </div>
   </div>

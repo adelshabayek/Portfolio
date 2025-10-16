@@ -1,20 +1,16 @@
 .hero-section {
   font-family: "Syne", sans-serif;
   padding-top: 30px;
-  .meet {
-    width: 120px;
-    line-height: 1;
+  .meet p {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 25px;
     color: #666;
-    margin-bottom: 25px;
-    text-align: center;
-    p {
-      border: 0.1px solid #ccc;
-      padding: 10px 15px;
-      border-radius: 25px;
-      font-size: 13px;
-      i {
-        font-size: 10px;
-      }
+    font-size: 13px;
+    i {
+      color: #7c3aed;
+      font-size: 10px;
     }
   }
 

@@ -25,110 +25,150 @@
     "quote": "\"Code is not just about syntax — it’s about storytelling and precision.\""
   },
 
-  "name": "Adel Akram Shabayek",
-  "title": "Front-End Developer | Angular 16+",
-  "location": "North Sinai, Egypt",
-  "email": "Shabayekadel15@gmail.com",
-  "phone": "+201020417971",
-  "linkedin": "https://www.linkedin.com/in/adel-shabayek",
-  "github": "https://github.com/adelshabayek",
-  "portfolio": "https://adelshabayek.vercel.app/",
-  "objective": "Front-End Developer with professional experience in Angular, Angular Material, PrimeNG, Bootstrap, and TypeScript. Skilled in building dynamic dashboards, responsive UIs, and CRUD applications. Strong collaborator with a focus on performance, accessibility, and clean code.",
-
-  "skills": {
-    "languages": [
-      "HTML5",
-      "CSS3",
-      "JavaScript (ES6+)",
-      "TypeScript",
-      "SCSS / LESS",
-      "AJAX / JSON"
+  "resume": {
+    "title": "Resume",
+    "text": "Throughout my career, I’ve combined academic knowledge with hands-on experience to build a strong foundation in both design and development. My educational background has equipped me with essential technical and creative skills, while my professional journey — working with companies, teams, and clients across different regions — has refined my ability to deliver practical, real-world solutions.",
+    "experiences": [
+      {
+        "title": "Front-End Developer",
+        "company": "3i-Vision",
+        "period": "3 Months (Hybrid)",
+        "details": [
+          "Built interactive dashboards and dynamic forms using Angular 17+, Angular Material, and PrimeNG.",
+          "Developed reusable components and optimized UI performance.",
+          "Integrated REST APIs and managed data with RxJS and Reactive Forms."
+        ]
+      },
+      {
+        "title": "Front-End Developer",
+        "company": "Fact Café (Remote)",
+        "period": "Full-Time",
+        "details": [
+          "Designed a seamless, interactive user interface using HTML, CSS, and TypeScript.",
+          "Delivered responsive design for a flawless experience across all devices.",
+          "Enhanced UI/UX through performance optimization and modern layout techniques."
+        ]
+      }
     ],
-    "frameworks": [
-      "Angular 16+",
-      "Angular Material",
-      "PrimeNG",
-      "RxJS",
-      "Bootstrap"
+    "toolTitle": "My favourite tools",
+    "tooleduex": "Practical experience and education",
+    "tools": [
+      { "name": "Html5", "icon": "/assets/icons/html.svg" },
+      { "name": "Css3", "icon": "/assets/icons/css.svg" },
+      { "name": "JavaScript", "icon": "/assets/icons/javascript.svg" },
+      { "name": "Bootstrap", "icon": "/assets/icons/bootstrap.svg" },
+      { "name": "Scss", "icon": "/assets/icons/scss.svg" },
+      { "name": "TypeScript", "icon": "/assets/icons/ts.svg" },
+      { "name": "Angular", "icon": "/assets/icons/angular.svg" },
+      { "name": "Git - Github", "icon": "/assets/icons/git.svg" },
+      { "name": "Vs Code", "icon": "/assets/icons/vs.svg" },
+      { "name": "NPM", "icon": "/assets/icons/npm.svg" },
+      { "name": "Figma", "icon": "/assets/icons/figma.svg" }
     ],
-    "tools": ["Git / GitHub", "VS Code", "NPM"],
-    "other": ["Responsive Design", "REST API Integration", "Reactive Forms"]
+    "education": [
+      {
+        "degree": "B.A. in English Language and Literature",
+        "institution": "Arish University",
+        "period": "2019 – 2023"
+      },
+      {
+        "degree": "Front-End Web Development Nanodegree",
+        "institution": "Udacity",
+        "period": "2019 – 2020"
+      }
+    ]
   },
 
   "projects": [
     {
-      "name": "Fact Café",
-      "role": "Front-End Developer",
-      "type": "Full-Time, Remote",
+      "title": "Sales Director Portfolio",
+      "image": "/assets/projects/ehab.png",
+      "description": "A modern personal portfolio built with Angular 17, PrimeNG, and Bootstrap for a sales director. Features responsive design, smooth animations, and dark/light mode.",
+      "tech": ["Website", "Portfolio"],
+      "link": "https://ehabelsayed.vercel.app/"
+    },
+    {
+      "title": "Fact Café",
+      "image": "/assets/projects/fact.png",
       "description": [
         "Designed with modern HTML, CSS, and JavaScript, offering a seamless, interactive interface.",
         "Built a categorized menu for easy exploration of drinks and desserts.",
         "Fully responsive design across all devices."
       ],
-      "url": "https://fact-menu.vercel.app/"
+      "tech": ["Website", "Menu"],
+      "link": "https://fact-menu.vercel.app/"
     },
+
     {
-      "name": "English Teacher",
-      "role": "Front-End Developer",
-      "type": "Full-Time, Remote",
+      "title": "English Teacher",
+      "image": "/assets/projects/ecommerce-dashboard.png",
       "description": [
         "Developed an interactive website for lesson booking and communication.",
         "Modern, responsive design with high performance."
       ],
-      "url": "https://mradelshabayek.vercel.app/"
+      "tech": ["Website", "Platform Education"],
+      "link": "https://mradelshabayek.vercel.app/"
     },
+
+
     {
-      "name": "Acadez Platform",
-      "role": "Front-End Developer",
-      "type": "Full-Time, Remote",
-      "description": [
+      "title": "Acadez Platform",
+      "image": "/assets/projects/acadez.png",
+       "description": [
         "Built a multilingual online learning platform (Arabic & English).",
         "Integrated smart search and student-teacher communication features."
       ],
-      "url": "https://acadez.vercel.app/"
+      "tech": ["Website", "Platform Education"],
+      "link": "https://acadez.vercel.app/"
     },
-    {
-      "name": "Elbiek Grilles",
-      "role": "Front-End Developer",
-      "type": "Part-Time, Remote",
-      "description": [
+
+     {
+      "title": "Elbiek Grilles",
+      "image": "/assets/projects/rest.png",
+       "description": [
         "Developed a smooth bilingual restaurant website.",
         "Integrated Microsoft Form for customer feedback."
       ],
-      "url": "https://elbiekgrills.netlify.app/"
+      "tech": ["Website", "Restaurant"],
+      "link": "https://elbiekgrills.netlify.app/"
     },
+
     {
-      "name": "Arish University",
-      "role": "Front-End Developer",
-      "type": "Full-Time, Hybrid",
-      "description": [
+      "title": "Arish University",
+      "image": "/assets/projects/uni.png",
+       "description": [
         "Built systems for university management using Vue.js, TypeScript, and Bootstrap5.",
         "Collaborated with a development team to meet project deadlines."
       ],
-      "url": "https://aru.edu.eg/"
+      "tech": ["Website", "University"],
+      "link": "https://aru.edu.eg/"
     }
   ],
 
-  "education": [
-    {
-      "institution": "Arish University",
-      "degree": "Bachelor of Arts and Education – English Language and Literature",
-      "year": "2019 – 2023"
-    },
-    {
-      "institution": "Udacity",
-      "degree": "Front-End Web Development Nanodegree",
-      "year": "2019 – 2020"
-    }
-  ],
-
-  "personal": {
-    "problemSolver": "Skilled in finding creative, innovative solutions to complex challenges.",
-    "adaptable": "Quickly adjusts to new technologies and project requirements.",
-    "detailOriented": "Focused on delivering clean, efficient, high-quality code.",
-    "communication": "Strong written and verbal communication for effective collaboration.",
-    "timeManagement": "Capable of prioritizing tasks and meeting deadlines efficiently."
+  "testimonials": [
+    
+  {
+    "name": "Ahmed Kamal",
+    "role": "Project Manager | 3i-Vision",
+    "feedback": "Adel delivered top-notch Angular solutions with pixel-perfect precision and exceptional attention to UX.",
+    "avatar": "assets/imges/man.jpg",
+     "rating": 5
   },
+  {
+    "name": "Michael Brown",
+    "role": "CEO | Fact Café",
+    "feedback": "Professional, reliable, and incredibly creative — Adel transformed our ideas into a smooth, scalable web app.",
+    "avatar": "assets/imges/man.jpg",
+     "rating": 5
+  },
+  {
+    "name": "Linda Parker",
+    "role": "UI/UX Designer | Freelance",
+    "feedback": "Working with Adel was a pleasure! His clean code and responsive design mindset make collaboration effortless.",
+    "avatar": "assets/imges/man.jpg",
+     "rating": 5
+  }
+],
 
   "languages": {
     "arabic": "Native",

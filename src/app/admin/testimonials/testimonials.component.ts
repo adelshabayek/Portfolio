@@ -1,20 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { ProfileService } from '../../core/services/profile.service';
 
 @Component({
-  selector: 'app-resume',
-  templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.scss']
+  selector: 'app-testimonials',
+  templateUrl: './testimonials.component.html',
+  styleUrls: ['./testimonials.component.scss'],
 })
-export class ResumeComponent implements OnInit {
-  resumeData: any;
+export class TestimonialsComponent implements OnInit {
+  testimonials: any[] = [];
 
   constructor(private profileService: ProfileService) {}
 
   ngOnInit(): void {
     this.profileService.getProfile().subscribe((data) => {
-      this.resumeData = data.resume;
+      this.testimonials = data.testimonials;
     });
   }
 }

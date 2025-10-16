@@ -6,38 +6,56 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ResumeComponent } from './resume/resume.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 // 👇 Import PrimeNG module
 import { CardModule } from 'primeng/card';
 import { ScrollAnimateDirective } from '../core/directives/scroll-animate.directive';
+import { ProjectComponent } from './project/project.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { CarouselModule } from 'primeng/carousel';
+import { ButtonModule } from 'primeng/button';
+import { TagModule } from 'primeng/tag';
+import { RatingModule } from 'primeng/rating';
+import { FormsModule } from '@angular/forms'; // ✅ ضروري لـ ngModel
 
 @NgModule({
+
+
+
   declarations: [
     HomeComponent,
     AboutComponent,
     ResumeComponent,
-    PortfolioComponent,
-ScrollAnimateDirective
+    ScrollAnimateDirective,
+    ProjectComponent,
+    TestimonialsComponent,
+    
   ],
   imports: [
     CommonModule,
-
     AdminRoutingModule,
     MatIconModule,
     MatDividerModule,
     MatButtonModule,
-    CardModule
+    CardModule,
+    CarouselModule,
+    ButtonModule,
+     TagModule,
+     FormsModule,
+     RatingModule
+    
   ],
   exports: [
     HomeComponent,
     AboutComponent,
     ResumeComponent,
-    PortfolioComponent,
-ScrollAnimateDirective
-  ]
+    ScrollAnimateDirective,
+    ProjectComponent,
+    TestimonialsComponent,
+    
+    
+  ],
 })
-export class AdminModule { }
+export class AdminModule {}

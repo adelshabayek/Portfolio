@@ -1,0 +1,46 @@
+<section class="testimonials-section" *ngIf="testimonials?.length">
+  <div class="meet">
+    <p><span><i class="pi pi-bookmark-fill"></i></span> Testimonials</p>
+  </div>
+
+  <h1>What Clients Say</h1>
+
+  <p-carousel
+    [value]="testimonials"
+    [numVisible]="1"
+    [numScroll]="1"
+    [circular]="true"
+    [autoplayInterval]="4000"
+    [responsiveOptions]="[
+      { breakpoint: '1024px', numVisible: 1, numScroll: 1 },
+      { breakpoint: '768px', numVisible: 1, numScroll: 1 }
+    ]"
+  >
+    <ng-template pTemplate="item" let-testimonial>
+      <div class="testimonial-card">
+        <div class="quote-icon">
+          <i class="pi pi-quote-left"></i>
+        </div>
+
+
+
+        <div class="client-info">
+          <img
+            [src]="testimonial.avatar"
+            [alt]="testimonial.name"
+            class="client-avatar"
+          />
+          <div>
+            <h4>{{ testimonial.name }}</h4>
+            <p>{{ testimonial.role }}</p>
+            <p-rating [readonly]="true" [cancel]="false" [ngModel]="testimonial.rating"></p-rating>
+          </div>
+        </div>
+
+                <p class="feedback">“{{ testimonial.feedback }}”</p>
+
+
+      </div>
+    </ng-template>
+  </p-carousel>
+</section>

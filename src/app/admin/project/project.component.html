@@ -1,0 +1,42 @@
+<section class="projects-section" *ngIf="projectsData">
+  <div class="meet">
+    <p>
+      <span><i class="pi pi-bookmark-fill"></i></span> Portfolio
+    </p>
+  </div>
+
+  <h2 class="pt-2">Featured Projects</h2>
+
+  <div class="grid-container">
+    <div
+      class="project-card"
+      *ngFor="let project of projectsData; let i = index"
+      scrollAnimate
+    >
+      <a *ngIf="project.link" [href]="project.link">
+        <div
+          class="project-image"
+          [style.background-image]="'url(' + project.image + ')'"
+          [style.animation-delay]="0.2 * i + 's'"
+        ></div>
+
+        <div class="overlay">
+          <a
+            *ngIf="project.link"
+            [href]="project.link"
+            target="_blank"
+            class="visit-btn"
+          >
+            <i class="pi pi-external-link"></i>
+          </a>
+        </div>
+
+        <div class="tech-stack">
+          <span *ngFor="let tech of project.tech" class="tech-badge">{{
+            tech
+          }}</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
