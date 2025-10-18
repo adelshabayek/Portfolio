@@ -1,5 +1,5 @@
 <section
-  class="hero-section text-left d-flex align-items-left justify-content-left mb-4"
+  class="hero-section text-left d-flex align-items-left justify-content-left"
 >
   <div class="" *ngIf="heroData" >
     <div class="meet" appScrollAnimate>
@@ -11,9 +11,12 @@
     <div class="heading" appScrollAnimate>
       <h1 class="hero-title">
         {{ heroData.name }}
+        <br>
+        {{ heroData.name2 }}
+        <br>
+        {{ heroData.object }}
       </h1>
-   
-      <h2>{{ heroData.object }}</h2>
+  
     </div>
     <div class="example-button-row pt-4" appScrollAnimate>
       <button

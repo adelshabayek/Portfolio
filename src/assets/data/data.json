@@ -1,9 +1,11 @@
 {
   "hero": {
     "greeting": "Let's Meet",
-    "name": "I'm Adel Shabayek",
+    "name": "I'm Adel",
+    "name2": "Shabayek",
     "title": "Front-End Developer | Angular CLI | Building Responsive & Scalable Web UI",
-    "object": "Motivated and detail-oriented Front-End Developer",
+    "object": "Motivated Front-End Developer",
+    "object2": "",
     "buttonText": "My Works"
   },
   "about": {
@@ -101,7 +103,7 @@
 
     {
       "title": "English Teacher",
-      "image": "/assets/projects/ecommerce-dashboard.png",
+      "image": "/assets/projects/mr.png",
       "description": [
         "Developed an interactive website for lesson booking and communication.",
         "Modern, responsive design with high performance."
@@ -149,24 +151,38 @@
     
   {
     "name": "Ahmed Kamal",
-    "role": "Project Manager | 3i-Vision",
-    "feedback": "Adel delivered top-notch Angular solutions with pixel-perfect precision and exceptional attention to UX.",
+    "role": " Founder",
+    "feedback": "عادل مطوّر شغوف ومبدع. دايمًا يقدّم حلول دقيقة وسريعة، وكوده نظيف جدًا، يراعي أدق تفاصيل تجربة المستخدم. فعلاً يعرف كيف يحوّل أي فكرة إلى واجهة أنيقة وسلسة.",
     "avatar": "assets/imges/man.jpg",
      "rating": 5
   },
   {
-    "name": "Michael Brown",
+    "name": "Mosafa Mohamed",
     "role": "CEO | Fact Café",
-    "feedback": "Professional, reliable, and incredibly creative — Adel transformed our ideas into a smooth, scalable web app.",
+    "feedback": "تعاملنا مع عادل في أكثر من مشروع، وكان دايمًا على قدر المسؤولية. محترف في التنظيم، ملتزم بالمواعيد، ويملك حس تصميم راقٍ جدًا. النتيجة كانت موقع استثنائي بأداء رائع.",
     "avatar": "assets/imges/man.jpg",
      "rating": 5
   },
   {
     "name": "Linda Parker",
     "role": "UI/UX Designer | Freelance",
-    "feedback": "Working with Adel was a pleasure! His clean code and responsive design mindset make collaboration effortless.",
+    "feedback": "شغلي مع عادل كان ممتع بكل معنى الكلمة! شخص متعاون جدًا ويفهم بسرعة المطلوب، عنده ذوق عالي في التفاصيل ومهارة فنية تخليه يوازن بين الجمال والأداء بسلاسة.",
     "avatar": "assets/imges/man.jpg",
      "rating": 5
+  },
+   {
+    "name": "Saud Al-Otaibi",
+    "role": "Entrepreneur | Riyadh, Saudi Arabia",
+    "feedback": "بصراحة عادل من أصدق وأكفأ الناس اللي تعاملت معهم، فاهم شغله زين وما يسلّم إلا وهو راضي 100%. الله يوفقه، شغله يشرف.",
+    "avatar": "assets/imges/man.jpg",
+    "rating": 5
+  },
+  {
+    "name": "Khalid Al-Mansoori",
+    "role": "Digital Business Developer | UAE",
+    "feedback": "عادل شخص شغوف ومخلص في شغله، تعرف من أول تعامل إن عنده فكر ومهارة. تسلّمه المشروع وتكون مرتاح، لأنه يسوي كل شي على أكمل وجه.",
+    "avatar": "assets/imges/man.jpg",
+    "rating": 5
   }
 ],
 

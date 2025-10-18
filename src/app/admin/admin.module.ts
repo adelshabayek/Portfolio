@@ -19,6 +19,7 @@ import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
 import { RatingModule } from 'primeng/rating';
 import { FormsModule } from '@angular/forms'; // ✅ ضروري لـ ngModel
+import { Carousel } from 'primeng/carousel'; // ✅ استيراد صحيح من PrimeNG
 
 @NgModule({
 
@@ -44,7 +45,8 @@ import { FormsModule } from '@angular/forms'; // ✅ ضروري لـ ngModel
     ButtonModule,
      TagModule,
      FormsModule,
-     RatingModule
+     RatingModule,
+     
     
   ],
   exports: [

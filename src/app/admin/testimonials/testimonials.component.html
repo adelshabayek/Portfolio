@@ -3,44 +3,47 @@
     <p><span><i class="pi pi-bookmark-fill"></i></span> Testimonials</p>
   </div>
 
-  <h1>What Clients Say</h1>
+  <h1 class="section-title">Clients say about me</h1>
 
-  <p-carousel
-    [value]="testimonials"
-    [numVisible]="1"
-    [numScroll]="1"
-    [circular]="true"
-    [autoplayInterval]="4000"
-    [responsiveOptions]="[
-      { breakpoint: '1024px', numVisible: 1, numScroll: 1 },
-      { breakpoint: '768px', numVisible: 1, numScroll: 1 }
-    ]"
-  >
-    <ng-template pTemplate="item" let-testimonial>
-      <div class="testimonial-card">
-        <div class="quote-icon">
-          <i class="pi pi-quote-left"></i>
-        </div>
+  <div class="carousel-wrapper">
+    <p-carousel
+      [value]="testimonials"
+      [numVisible]="1"
+      [numScroll]="1"
+      [circular]="true"
+      [autoplayInterval]="6000"
+      [showIndicators]="false"
+      [showNavigators]="false"
+    >
+      <ng-template pTemplate="item" let-t>
+        <div class="testimonial-card">
+          <div class="client-row">
+            <img [src]="t.avatar" [alt]="t.name" class="client-avatar" />
 
-
-
-        <div class="client-info">
-          <img
-            [src]="testimonial.avatar"
-            [alt]="testimonial.name"
-            class="client-avatar"
-          />
-          <div>
-            <h4>{{ testimonial.name }}</h4>
-            <p>{{ testimonial.role }}</p>
-            <p-rating [readonly]="true" [cancel]="false" [ngModel]="testimonial.rating"></p-rating>
+            <div class="client-info">
+              <h3>{{ t.name }}</h3>
+              <p class="role">{{ t.role }}</p>
+              <p-rating
+                [ngModel]="t.rating"
+                [readonly]="true"
+                [cancel]="false"
+              ></p-rating>
+            </div>
           </div>
+
+          <p class="feedback">{{ t.feedback }}</p>
+
+          <a *ngIf="t.link" [href]="t.link" target="_blank" class="project-link">
+            Project Page <i class="pi pi-arrow-right"></i>
+          </a>
         </div>
+      </ng-template>
+    </p-carousel>
 
-                <p class="feedback">“{{ testimonial.feedback }}”</p>
-
-
-      </div>
-    </ng-template>
-  </p-carousel>
+    <!-- ✅ Custom Bottom Navigators -->
+    <div class="custom-nav">
+      <button pButton type="button" icon="pi pi-angle-left" class="nav-btn prev" (click)="prev()"></button>
+      <button pButton type="button" icon="pi pi-angle-right" class="nav-btn next" (click)="next()"></button>
+    </div>
+  </div>
 </section>

@@ -1,6 +1,7 @@
 .hero-section {
   font-family: "Syne", sans-serif;
-  padding-top: 30px;
+  margin-bottom: 100px;
+
   .meet p {
     border: 1px solid #ccc;
     display: inline-block;
@@ -15,10 +16,9 @@
   }
 
   .heading {
-    width: 40rem;
     margin-bottom: 20px;
     h1 {
-      font-size: 60px;
+      font-size: 62px;
 
       color: #8b55cb;
       line-height: 1.3;
