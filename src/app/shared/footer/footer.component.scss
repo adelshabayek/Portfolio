@@ -131,6 +131,16 @@
       color: #6b7280;
       letter-spacing: 0.5px;
     }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      padding: 20px 8px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 13px;
+      padding: 15px 6px;
+    }
   }
 
   /* 📱 Responsive */
@@ -149,11 +159,10 @@
     .social-icons .icon {
       width: 55px;
       height: 55px;
-     
     }
 
-    .social-icons{
-    gap: 1.5rem;
+    .social-icons {
+      gap: 1.5rem;
       i {
         font-size: 30px !important;
       }

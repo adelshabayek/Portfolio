@@ -60,24 +60,24 @@
     </p>
 
     <!-- 📍 Info -->
-    <div class="footer-info">
+    <div class="footer-info" *ngIf="contact">
       <div class="info-item">
         <h5>Location</h5>
-        <p>North Sinai, Egypt</p>
+        <p>{{contact.location}}</p>
       </div>
       <div class="info-item">
         <h5>Phone</h5>
-        <p>+20 120 035 0503</p>
+        <p>{{contact.number}}</p>
       </div>
       <div class="info-item">
         <h5>Email</h5>
-        <p>shabayekadel15sgmail.com</p>
+        <p>{{contact.mail}}</p>
       </div>
     </div>
   </div>
 
   <!-- 🧾 Bottom line -->
   <div class="footer-bottom">
-    <p>© 2025 Mr. Adel Shabayek — All Rights Reserved</p>
+    <p>© <span>{{ currentYear }}</span> {{contact.rights}}</p>
   </div>
 </footer>

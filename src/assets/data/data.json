@@ -164,7 +164,7 @@
      "rating": 5
   },
   {
-    "name": "Linda Parker",
+    "name": "Fares Khalel",
     "role": "UI/UX Designer | Freelance",
     "feedback": "شغلي مع عادل كان ممتع بكل معنى الكلمة! شخص متعاون جدًا ويفهم بسرعة المطلوب، عنده ذوق عالي في التفاصيل ومهارة فنية تخليه يوازن بين الجمال والأداء بسلاسة.",
     "avatar": "assets/imges/man.jpg",
@@ -185,6 +185,13 @@
     "rating": 5
   }
 ],
+
+"contact" : {
+  "number" : "+201020417971",
+  "mail" : "Shabayekadel15@gmail.com",
+  "location": "North Sinai, Egypt",
+  "rights": "Adel Shabayek— All Rights Reserved"
+},
 
   "languages": {
     "arabic": "Native",

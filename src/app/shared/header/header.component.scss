@@ -113,18 +113,18 @@
   /* 📱 Mobile Navigation */
   .mobile-nav {
     position: fixed;
-    bottom: 15px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 95%;
+    width: 80%;
     background: transparent;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 0.5rem 0;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
     z-index: 1200;
 
     button {
