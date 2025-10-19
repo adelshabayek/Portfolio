@@ -134,7 +134,7 @@
     .app-2 {
       position: fixed !important;
       bottom: 0;
-      top: auto;
+      top: 100%;
       left: 0;
       width: 100%;
       z-index: 1000;
@@ -185,7 +185,7 @@
 
   .side-content .app-2 {
     font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
+
   }
 
   .side-content .sections {
