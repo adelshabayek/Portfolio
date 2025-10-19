@@ -4,6 +4,30 @@ html,
 body {
   height: 100%;
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #7c3aed #f1f1f1;
+   overscroll-behavior: contain;
+
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #7c3aed, #a855f7);
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #5b21b6, #7c3aed);
 }
 body {
   margin: 0;
@@ -114,3 +138,80 @@ body.dark-theme {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
   }
 }
+
+
+// spinner loader 
+
+/* 🌈 Premium Preloader (Global) */
+#app-preloader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #f8f6ff, #ede9fe);
+  z-index: 99999;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+#app-preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader__content {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.loader__box {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  border-radius: 18px;
+  animation: spinBox 1.6s cubic-bezier(0.5, 0.2, 0.2, 1) infinite;
+}
+
+.loader__shadow {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 10px;
+  background: rgba(124, 58, 237, 0.25);
+  border-radius: 50%;
+  filter: blur(6px);
+  animation: shadowScale 1.6s ease-in-out infinite;
+}
+
+/* ✨ Animations */
+@keyframes spinBox {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+}
+
+@keyframes shadowScale {
+  0%, 100% {
+    transform: translateX(-50%) scaleX(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(-50%) scaleX(1.3);
+    opacity: 0.3;
+  }
+}
+
+/* 📱 Responsive for small screens */
+@media (max-width: 600px) {
+  .loader__content {
+    width: 60px;
+    height: 60px;
+  }
+}
+

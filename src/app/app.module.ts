@@ -16,6 +16,7 @@ import { ScrollAnimateDirective } from './core/directives/scroll-animate.directi
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselModule } from 'primeng/carousel';
 import { RatingModule } from 'primeng/rating';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { RatingModule } from 'primeng/rating';
     CardModule,
     HttpClientModule,
     CarouselModule,
-    RatingModule
+    RatingModule,
+    ProgressSpinnerModule
   ],
   providers: [
     provideAnimationsAsync()

@@ -1,11 +1,11 @@
 <section class="testimonials-section" *ngIf="testimonials?.length">
   <div class="meet">
-    <p><span><i class="pi pi-bookmark-fill"></i></span> Testimonials</p>
+    <p appScrollAnimate><span><i class="pi pi-bookmark-fill"></i></span> Testimonials</p>
   </div>
 
-  <h1 class="section-title">Clients say about me</h1>
+  <h1 class="section-title" appScrollAnimate>Clients say about me</h1>
 
-  <div class="carousel-wrapper">
+  <div class="carousel-wrapper" appScrollAnimate>
     <p-carousel
       [value]="testimonials"
       [numVisible]="1"
