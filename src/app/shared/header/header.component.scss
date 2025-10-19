@@ -118,15 +118,14 @@
     transform: translateX(-50%);
     width: 80%;
     height: 35px;
-    background: transparent;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(15px);
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.1);
-    z-index: 1200;
+    z-index: 9999;
 
     button {
       color: #444;
