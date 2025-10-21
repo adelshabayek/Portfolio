@@ -42,11 +42,16 @@ body.dark-theme {
   color: #c2c1ce;
 
   .dark,
-  .content {
-    background: #111111;
-    color: #c2c1ce;
+  .content
+ {
+    background: #111111 !important;
+    color: #c2c1ce !important;
   }
 
+  .side-content .app-2 {
+    background: #111111 !important;
+  }
+  
   h1,
   h2,
   h3,
