@@ -42,8 +42,7 @@ body.dark-theme {
   color: #c2c1ce;
 
   .dark,
-  .content
- {
+  .content {
     background: #111111 !important;
     color: #c2c1ce !important;
   }
@@ -51,7 +50,7 @@ body.dark-theme {
   .side-content .app-2 {
     background: #111111 !important;
   }
-  
+
   h1,
   h2,
   h3,
@@ -60,9 +59,13 @@ body.dark-theme {
     color: #debbcb !important;
   }
   a {
-    color: #c2c1ce !important;
+    color: #666 !important;
+    &:hover,
+    &.active {
+      color: #c2c1ce !important;
+    }
   }
-  button:not(.theme-btn, .nav-btn , .mobile-nav button) {
+  button:not(.theme-btn, .nav-btn, .mobile-nav button) {
     background: linear-gradient(90deg, #debbcb, #f8c9df) !important;
     color: #111111 !important;
   }
@@ -83,7 +86,7 @@ body.dark-theme {
     a.active {
       border: 1px solid #444 !important;
     }
-    .talk-btn-mobile{
+    .talk-btn-mobile {
       background: #debbcb !important;
     }
   }
@@ -163,6 +166,19 @@ body.dark-theme {
       }
     }
   }
+
+  .content {
+
+    &::before,
+    &::after {
+      content: "";
+      background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.15),
+        transparent
+      );
+    }
+  }
 }
 // spinner loader
 /* 🌈 Premium Preloader (Global) */
@@ -212,7 +228,8 @@ body.dark-theme {
 
 /* ✨ Animations */
 @keyframes spinBox {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(0deg) scale(1);
   }
   50% {
@@ -221,7 +238,8 @@ body.dark-theme {
 }
 
 @keyframes shadowScale {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(-50%) scaleX(1);
     opacity: 0.7;
   }
@@ -252,7 +270,6 @@ body.dark-theme .loader__box {
 body.dark-theme .loader__shadow {
   background: rgba(248, 201, 223, 0.2);
 }
-
 
 /* 🌙 Force dark scrollbar (Global fix for Angular encapsulation) */
 /* 🌞 Scrollbar Default */
