@@ -33,6 +33,7 @@
       &:hover {
         color: #333;
         transition: width 0.3s ease;
+        
       }
 
       /* Active link styling */
@@ -62,17 +63,14 @@
     align-items: center;
     justify-content: center;
     gap: 6px;
-    transition: all 0.35s ease;
-    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+    // transition: all 0.35s ease;
+    
     position: relative;
     overflow: hidden;
     isolation: isolate;
     font-family: "Syne", sans-serif;
 
     /* ✨ Hover Animation */
-    &:hover {
-      box-shadow: 0 6px 20px rgba(124, 58, 237, 0.45);
-    }
 
     &:active {
       transform: scale(0.97);
@@ -161,22 +159,15 @@
 
     /* 💬 Talk Button (mobile) */
     .talk-btn-mobile {
-      background: linear-gradient(90deg, #7c3aed, #9333ea);
+      background: #5b21b6 ;
       color: white;
       border-radius: 50%;
       width: 35px;
       height: 35px;
-      box-shadow: 0 3px 10px rgba(124, 58, 237, 0.3);
       display: flex;
       justify-content: center;
       align-items: center;
-      
-      
-
-      &:hover {
-        box-shadow: 0 5px 14px rgba(124, 58, 237, 0.4);
-      }
-
+transition: none;
       mat-icon {
         font-size: 12px;
         padding: 0;

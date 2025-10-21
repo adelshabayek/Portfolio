@@ -1,11 +1,11 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   scrolled = false;
   isDark = false;
   activeSection = 'home';
@@ -16,21 +16,42 @@ export class HeaderComponent {
     this.detectActiveSection();
   }
 
-  toggleTheme() {
-    this.isDark = !this.isDark;
-    document.body.classList.toggle('dark-theme', this.isDark);
+  ngOnInit(): void {
+    // ✅ عند تحميل الصفحة، نتحقق من الوضع المخزن في localStorage
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme === 'dark') {
+      this.isDark = true;
+      document.body.classList.add('dark-theme');
+      document.documentElement.classList.add('dark-scrollbar');
+    } else {
+      this.isDark = false;
+      document.body.classList.remove('dark-theme');
+      document.documentElement.classList.remove('dark-scrollbar');
+    }
   }
 
-   // ✅ Simple smooth scroll (native browser behavior)
+  toggleTheme() {
+    this.isDark = !this.isDark;
+
+    // ✅ تبديل الكلاس على body و html
+    document.body.classList.toggle('dark-theme', this.isDark);
+    document.documentElement.classList.toggle('dark-scrollbar', this.isDark);
+
+    // ✅ تخزين التفضيل في localStorage
+    localStorage.setItem('theme', this.isDark ? 'dark' : 'light');
+  }
+
+  // ✅ Smooth scroll
   scrollTo(sectionId: string) {
     const target = document.getElementById(sectionId);
     if (target) {
-      const headerOffset = 80; // adjust if your header overlaps content
-      const elementPosition = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+      const headerOffset = 80;
+      const elementPosition =
+        target.getBoundingClientRect().top + window.scrollY - headerOffset;
 
       window.scrollTo({
         top: elementPosition,
-        behavior: 'smooth' // 👈 smooth scroll
+        behavior: 'smooth'
       });
     }
   }

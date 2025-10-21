@@ -51,7 +51,7 @@
   background: linear-gradient(90deg, #7c3aed, #9333ea);
   color: #fff;
   font-size: 17px;
-  box-shadow: 0 3px 10px rgba(124, 58, 237, 0.3);
+
   cursor: pointer;
   transition: all 0.1s ease;
   display: inline-flex;
@@ -89,7 +89,7 @@
   /* ✨ Hover animation like social buttons */
   &:hover {
    
-    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
+  
 
     .front2 {
       transform: translateY(-100%);
@@ -174,8 +174,6 @@
 
     &:hover {
       transform: translateY(-3px);
-      border-color: #7c3aed;
-      color: #7c3aed;
 
       .front {
         transform: translateY(-100%);
@@ -190,19 +188,6 @@
 
     &:active {
       transform: scale(0.95);
-    }
-  }
-}
-
-/* 🌙 Dark Theme */
-body.dark-theme {
-  .social-btn {
-    border-color: #ccc;
-    color: #ddd;
-
-    &:hover {
-      border-color: #a855f7;
-      color: #a855f7;
     }
   }
 }
