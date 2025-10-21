@@ -89,6 +89,13 @@ body.dark-theme {
     .talk-btn-mobile {
       background: #debbcb !important;
     }
+
+    .mobile-nav {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+      button {
+        color: #777 !important;
+      }
+    }
   }
 
   .about-section {
@@ -168,7 +175,6 @@ body.dark-theme {
   }
 
   .content {
-
     &::before,
     &::after {
       content: "";
