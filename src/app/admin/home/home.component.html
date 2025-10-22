@@ -2,14 +2,14 @@
   class="hero-section text-left d-flex align-items-left justify-content-left"
 >
   <div *ngIf="heroData" >
-    <div class="meet" appScrollAnimate>
+    <div class="meet" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
       <p>
         <span><i class="pi pi-bookmark-fill"></i></span> {{ heroData.greeting }}
       </p>
     </div>
 
 
-    <div class="heading" appScrollAnimate>
+    <div class="heading" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
       <h1 class="hero-title">
         {{ heroData.name }}
        <br>
@@ -17,7 +17,7 @@
       </h1>
   
     </div>
-    <div class="example-button-row pt-4" appScrollAnimate>
+    <div class="example-button-row pt-4" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
       <button
         mat-stroked-button
         class="btn-outline"

@@ -16,6 +16,7 @@ import {MatCardModule} from '@angular/material/card';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { ScrollAnimateDirective } from '../core/directives/scroll-animate.directive';
+import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 
 
 @NgModule({
@@ -37,7 +38,7 @@ import { ScrollAnimateDirective } from '../core/directives/scroll-animate.direct
     MatCardModule,
     ButtonModule,
     CardModule,
-    
+    AnimateOnScrollModule
 
   ],
   exports: [ HeaderComponent,

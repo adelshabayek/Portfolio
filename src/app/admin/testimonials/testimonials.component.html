@@ -1,11 +1,27 @@
 <section class="testimonials-section" *ngIf="testimonials?.length">
   <div class="meet">
-    <p appScrollAnimate><span><i class="pi pi-bookmark-fill"></i></span> Testimonials</p>
+    <p pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
+      <span><i class="pi pi-bookmark-fill"></i></span> Testimonials
+    </p>
   </div>
 
-  <h1 class="section-title" appScrollAnimate>Clients say about me</h1>
+  <h1
+    class="section-title"
+    pAnimateOnScroll
+    enterClass="fadein"
+    leaveClass="fadeout"
+    [once]="false"
+  >
+    Clients say about me
+  </h1>
 
-  <div class="carousel-wrapper" appScrollAnimate>
+  <div
+    class="carousel-wrapper"
+    pAnimateOnScroll
+    enterClass="fadein"
+    leaveClass="fadeout"
+    [once]="false"
+  >
     <p-carousel
       [value]="testimonials"
       [numVisible]="1"
@@ -33,7 +49,12 @@
 
           <p class="feedback">{{ t.feedback }}</p>
 
-          <a *ngIf="t.link" [href]="t.link" target="_blank" class="project-link">
+          <a
+            *ngIf="t.link"
+            [href]="t.link"
+            target="_blank"
+            class="project-link"
+          >
             Project Page <i class="pi pi-arrow-right"></i>
           </a>
         </div>
@@ -42,8 +63,20 @@
 
     <!-- ✅ Custom Bottom Navigators -->
     <div class="custom-nav">
-      <button pButton type="button" icon="pi pi-angle-left" class="nav-btn prev" (click)="prev()"></button>
-      <button pButton type="button" icon="pi pi-angle-right" class="nav-btn next" (click)="next()"></button>
+      <button
+        pButton
+        type="button"
+        icon="pi pi-angle-left"
+        class="nav-btn prev"
+        (click)="prev()"
+      ></button>
+      <button
+        pButton
+        type="button"
+        icon="pi pi-angle-right"
+        class="nav-btn next"
+        (click)="next()"
+      ></button>
     </div>
   </div>
 </section>

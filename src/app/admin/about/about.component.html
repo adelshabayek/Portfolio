@@ -1,15 +1,15 @@
 <section class="about-section" *ngIf="aboutData">
-  <div class="meet" appScrollAnimate>
+  <div class="meet" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
     <p>
       <span><i class="pi pi-bookmark-fill"></i></span> {{ aboutData.greeting }}
     </p>
   </div>
 
-  <h1 appScrollAnimate>{{ aboutData.title }}</h1>
+  <h1 pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">{{ aboutData.title }}</h1>
 
   <!-- 💎 Skills Icons Section -->
     <div class="skills-grid text-center mb-5" >
-      <div class="skill-item" appScrollAnimate *ngFor="let skill of aboutData.skills">
+      <div class="skill-item" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false" *ngFor="let skill of aboutData.skills">
         <i [class]="skill.icon + ' skill-icon'"></i>
         <p>{{ skill.text }}</p>
       </div>
@@ -17,7 +17,7 @@
 
   <div class="row pt-3">
     <div class="col-md-8">
-      <p class="disc pe-3" appScrollAnimate>
+      <p class="disc pe-3" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
         {{ aboutData.description1 }}
         <br />
         {{ aboutData.description2 }}
@@ -26,18 +26,18 @@
       </p>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
       <div
         class="info"
         *ngFor="let field of ['name', 'whatsapp', 'email', 'location']"
       >
-        <h5 appScrollAnimate>{{ field | titlecase }}</h5>
-        <p appScrollAnimate> {{ aboutData[field] }}</p>
+        <h5 >{{ field | titlecase }}</h5>
+        <p > {{ aboutData[field] }}</p>
       </div>
     </div>
 
     <!-- let's work  -->
-    <div class="text-start pt-3 mb-1" appScrollAnimate>
+    <div class="text-start pt-3 mb-1" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
       <button mat-raised-button class="talk-btn">
         <span class="front2">Contact Me</span>
         <span class="back2">Contact Me</span>

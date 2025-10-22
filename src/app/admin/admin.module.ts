@@ -20,11 +20,9 @@ import { TagModule } from 'primeng/tag';
 import { RatingModule } from 'primeng/rating';
 import { FormsModule } from '@angular/forms'; // ✅ ضروري لـ ngModel
 import { Carousel } from 'primeng/carousel'; // ✅ استيراد صحيح من PrimeNG
+import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 
 @NgModule({
-
-
-
   declarations: [
     HomeComponent,
     AboutComponent,
@@ -46,7 +44,7 @@ import { Carousel } from 'primeng/carousel'; // ✅ استيراد صحيح من
      TagModule,
      FormsModule,
      RatingModule,
-     
+   AnimateOnScrollModule
     
   ],
   exports: [
@@ -56,8 +54,7 @@ import { Carousel } from 'primeng/carousel'; // ✅ استيراد صحيح من
     ScrollAnimateDirective,
     ProjectComponent,
     TestimonialsComponent,
-    
-    
+AnimateOnScrollModule
   ],
 })
 export class AdminModule {}

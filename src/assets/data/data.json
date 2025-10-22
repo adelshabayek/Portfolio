@@ -111,11 +111,10 @@
       "link": "https://mradelshabayek.vercel.app/"
     },
 
-
     {
       "title": "Acadez Platform",
       "image": "/assets/projects/acadez.png",
-       "description": [
+      "description": [
         "Built a multilingual online learning platform (Arabic & English).",
         "Integrated smart search and student-teacher communication features."
       ],
@@ -123,10 +122,10 @@
       "link": "https://acadez.vercel.app/"
     },
 
-     {
+    {
       "title": "Elbiek Grilles",
       "image": "/assets/projects/rest.png",
-       "description": [
+      "description": [
         "Developed a smooth bilingual restaurant website.",
         "Integrated Microsoft Form for customer feedback."
       ],
@@ -137,7 +136,7 @@
     {
       "title": "Arish University",
       "image": "/assets/projects/uni.png",
-       "description": [
+      "description": [
         "Built systems for university management using Vue.js, TypeScript, and Bootstrap5.",
         "Collaborated with a development team to meet project deadlines."
       ],
@@ -147,50 +146,60 @@
   ],
 
   "testimonials": [
-    
-  {
-    "name": "Ahmed Kamal",
-    "role": " Founder",
-    "feedback": "عادل مطوّر شغوف ومبدع. دايمًا يقدّم حلول دقيقة وسريعة، وكوده نظيف جدًا، يراعي أدق تفاصيل تجربة المستخدم. فعلاً يعرف كيف يحوّل أي فكرة إلى واجهة أنيقة وسلسة.",
-    "avatar": "assets/imges/man.jpg",
-     "rating": 5
-  },
-  {
-    "name": "Mosafa Mohamed",
-    "role": "CEO | Fact Café",
-    "feedback": "تعاملنا مع عادل في أكثر من مشروع، وكان دايمًا على قدر المسؤولية. محترف في التنظيم، ملتزم بالمواعيد، ويملك حس تصميم راقٍ جدًا. النتيجة كانت موقع استثنائي بأداء رائع.",
-    "avatar": "assets/imges/man.jpg",
-     "rating": 5
-  },
-  {
-    "name": "Fares Khalel",
-    "role": "UI/UX Designer | Freelance",
-    "feedback": "شغلي مع عادل كان ممتع بكل معنى الكلمة! شخص متعاون جدًا ويفهم بسرعة المطلوب، عنده ذوق عالي في التفاصيل ومهارة فنية تخليه يوازن بين الجمال والأداء بسلاسة.",
-    "avatar": "assets/imges/man.jpg",
-     "rating": 5
-  },
-   {
-    "name": "Saud Al-Otaibi",
-    "role": "Entrepreneur | Riyadh, Saudi Arabia",
-    "feedback": "بصراحة عادل من أصدق وأكفأ الناس اللي تعاملت معهم، فاهم شغله زين وما يسلّم إلا وهو راضي 100%. الله يوفقه، شغله يشرف.",
-    "avatar": "assets/imges/man.jpg",
-    "rating": 5
-  },
-  {
-    "name": "Khalid Al-Mansoori",
-    "role": "Digital Business Developer | UAE",
-    "feedback": "عادل شخص شغوف ومخلص في شغله، تعرف من أول تعامل إن عنده فكر ومهارة. تسلّمه المشروع وتكون مرتاح، لأنه يسوي كل شي على أكمل وجه.",
-    "avatar": "assets/imges/man.jpg",
-    "rating": 5
-  }
-],
+    {
+      "name": "Mosafa Mohamed",
+      "role": "Founder",
+      "feedback": "تسلم يدك عادل التصميم جميل و مثالي و يعكس هويتنا فعلا.",
+      "avatar": "assets/imges/man.jpg",
+      "rating": 5
+    },
 
-"contact" : {
-  "number" : "+201020417971",
-  "mail" : "Shabayekadel15@gmail.com",
-  "location": "North Sinai, Egypt",
-  "rights": "Adel Shabayek— All Rights Reserved"
-},
+    {
+      "name": "Fares Khalel",
+      "role": "UI/UX Designer | Freelance",
+      "feedback": "اشتغلت مع عادل أكتر من مرة، وكل مرة بيبهرني بإبداعه ودقته في التفاصيل.",
+      "avatar": "assets/imges/man.jpg",
+      "rating": 5
+    },
+
+    {
+      "name": "Ahmed Kamal",
+      "role": "Founder",
+      "feedback": "بجد استمتعت بالشغل مع عادل، سريع ودقيق وبيهتم بكل تفصيلة صغيرة، فاهم يعني إيه تجربة مستخدم كويسة.",
+      "avatar": "assets/imges/man.jpg",
+      "rating": 5
+    },
+
+    {
+      "name": "Saud Al-Otaibi",
+      "role": "Entrepreneur | Riyadh, Saudi Arabia",
+      "feedback": "يعطيك الف عافيه علي المصداقيه صراحه انت ماشاء الله علي تربيتك و المصداقيه",
+      "avatar": "assets/imges/man.jpg",
+      "rating": 5
+    },
+     {
+      "name": "Layan Ibrahim",
+      "role": "Founder",
+      "feedback": "التعامل معو سهل ومريح، وبيسلم عالوقت.",
+      "avatar": "assets/imges/man.jpg",
+      "rating": 5
+    },
+    {
+      "name": "Khalid Al-Mansoori",
+      "role": "Digital Business Developer | UAE",
+      "feedback": "شغله متقن وسريع، فعلاً يعرف يقدّم الشيّ اللي نحتاجه بالضبط.",
+      "avatar": "assets/imges/man.jpg",
+      "rating": 5
+    }
+   
+  ],
+
+  "contact": {
+    "number": "+201020417971",
+    "mail": "Shabayekadel15@gmail.com",
+    "location": "North Sinai, Egypt",
+    "rights": "Adel Shabayek— All Rights Reserved"
+  },
 
   "languages": {
     "arabic": "Native",

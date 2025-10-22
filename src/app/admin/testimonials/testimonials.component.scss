@@ -32,7 +32,7 @@
 
   ::ng-deep .p-carousel {
     .p-carousel-content {
-      justify-content: center;
+      justify-content: left;
     }
   }
 
@@ -50,15 +50,15 @@
     .client-row {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 15px;
       margin-bottom: 20px;
 
       .client-avatar {
         width: 85px;
         height: 85px;
-        border-radius: 50%;
+        border-radius: 40%;
         object-fit: cover;
-        border: 2px solid #7c3aed;
+        border: 1px solid #7c3aed;
         background: #f3e8ff;
       }
 
@@ -136,8 +136,8 @@
     .testimonial-card {
       padding: 25px;
       .client-row {
-        flex-direction: column;
-        text-align: center;
+        
+        text-align: left;
       }
       .feedback {
         font-size: 1rem;
