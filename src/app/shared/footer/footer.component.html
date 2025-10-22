@@ -1,7 +1,7 @@
 <footer class="footer-section" >
-  <div class="footer-container">
+  <div class="footer-container" >
     <!-- 🌐 Social Links -->
-    <div class="social-icons " pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
+    <div class="social-icons "  >
       <a href="https://github.com/adelshabayek" class="icon">
         <span class="front">
           <i class="pi pi-github"></i>
@@ -54,13 +54,13 @@
     </div>
 
     <!-- 💬 Contact text -->
-    <p class="contact-text" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
+    <p class="contact-text"  >
       Want to know more about me, tell me about your project, or just say hello?
       Drop me a line and I’ll get back to you as soon as possible.
     </p>
 
     <!-- 📍 Info -->
-    <div class="footer-info" *ngIf="contact" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
+    <div class="footer-info" *ngIf="contact"  >
       <div class="info-item">
         <h5>Location</h5>
         <p>{{contact.location}}</p>
@@ -77,7 +77,7 @@
   </div>
 
   <!-- 🧾 Bottom line -->
-  <div class="footer-bottom" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
+  <div class="footer-bottom"  >
     <p>© <span>{{ currentYear }}</span> {{contact.rights}}</p>
   </div>
 </footer>

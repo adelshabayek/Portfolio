@@ -54,7 +54,6 @@ import { AnimateOnScrollModule } from 'primeng/animateonscroll';
     ScrollAnimateDirective,
     ProjectComponent,
     TestimonialsComponent,
-AnimateOnScrollModule
-  ],
+    ],
 })
 export class AdminModule {}

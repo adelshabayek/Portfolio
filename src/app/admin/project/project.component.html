@@ -1,19 +1,19 @@
 <section class="projects-section" *ngIf="projectsData">
-  <div class="meet" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
+  <div class="meet" appScrollAnimate >
     <p>
       <span><i class="pi pi-bookmark-fill"></i></span> Portfolio
     </p>
   </div>
 
-  <h2 class="pt-2" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">Featured Projects</h2>
+  <h2 class="pt-2" appScrollAnimate >Featured Projects</h2>
 
   <div class="grid-container">
     <div
       class="project-card"
       *ngFor="let project of projectsData; let i = index"
-      scrollAnimate
+      
     >
-      <a *ngIf="project.link" [href]="project.link" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
+      <a *ngIf="project.link" [href]="project.link" appScrollAnimate >
         <div
           class="project-image"
           [style.background-image]="'url(' + project.image + ')'"

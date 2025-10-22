@@ -1,15 +1,15 @@
-<section
+<section 
   class="hero-section text-left d-flex align-items-left justify-content-left"
 >
   <div *ngIf="heroData" >
-    <div class="meet" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
-      <p>
+    <div class="meet"  appScrollAnimate>
+      <p >
         <span><i class="pi pi-bookmark-fill"></i></span> {{ heroData.greeting }}
       </p>
     </div>
 
 
-    <div class="heading" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
+    <div class="heading "  appScrollAnimate>
       <h1 class="hero-title">
         {{ heroData.name }}
        <br>
@@ -17,8 +17,8 @@
       </h1>
   
     </div>
-    <div class="example-button-row pt-4" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
-      <button
+    <div class="example-button-row pt-4"  appScrollAnimate>
+      <button 
         mat-stroked-button
         class="btn-outline"
         (click)="scrollTo('portfolio')"

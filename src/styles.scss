@@ -1,31 +1,14 @@
-.fadein {
-  animation: fadeIn 0.8s ease forwards;
+/* Hidden by default */
+[appScrollAnimate] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease; /* 👈 Smooth and elegant */
 }
 
-.fadeout {
-  animation: fadeOut 0.8s ease forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(40px);
-  }
+/* When visible */
+[appScrollAnimate].show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* You can add global styles to this file, and also import other style files */

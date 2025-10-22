@@ -1,27 +1,13 @@
 <section class="testimonials-section" *ngIf="testimonials?.length">
-  <div class="meet">
-    <p pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" [once]="false">
+  <div class="meet" appScrollAnimate>
+    <p>
       <span><i class="pi pi-bookmark-fill"></i></span> Testimonials
     </p>
   </div>
 
-  <h1
-    class="section-title"
-    pAnimateOnScroll
-    enterClass="fadein"
-    leaveClass="fadeout"
-    [once]="false"
-  >
-    Clients say about me
-  </h1>
+  <h1 appScrollAnimate>Clients say about me</h1>
 
-  <div
-    class="carousel-wrapper"
-    pAnimateOnScroll
-    enterClass="fadein"
-    leaveClass="fadeout"
-    [once]="false"
-  >
+  <div class="carousel-wrapper" appScrollAnimate>
     <p-carousel
       [value]="testimonials"
       [numVisible]="1"

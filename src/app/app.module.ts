@@ -21,9 +21,7 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
 @NgModule({
   declarations: [
     AppComponent,
-    
-
-  ],
+      ],
   imports: [
     BrowserModule,
     AppRoutingModule,

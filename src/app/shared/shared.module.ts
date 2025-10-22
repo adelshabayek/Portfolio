@@ -38,7 +38,8 @@ import { AnimateOnScrollModule } from 'primeng/animateonscroll';
     MatCardModule,
     ButtonModule,
     CardModule,
-    AnimateOnScrollModule
+    AnimateOnScrollModule,
+
 
   ],
   exports: [ HeaderComponent,
