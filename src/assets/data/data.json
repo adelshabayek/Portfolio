@@ -35,20 +35,24 @@
         "company": "3i-Vision (Hybrid)",
         "period": "Full Time ",
         "details": [
-          "Built interactive dashboards and dynamic forms using Angular 17+, Angular Material, and PrimeNG.",
-          "Developed reusable components and optimized UI performance.",
-          "Integrated REST APIs and managed data with RxJS and Reactive Forms."
-        ]
+    "Developed scalable, high-performance front-end applications using Angular 17+, PrimeNG, and Angular Material.",
+    "Built fully interactive dashboards and dynamic form systems with advanced validation and state management using Reactive Forms and RxJS.",
+    "Collaborated with back-end teams to integrate RESTful APIs and ensure seamless communication between client and server.",
+    "Refactored legacy code into reusable, modular components to improve maintainability and scalability.",
+    "Enhanced overall user experience through performance tuning, responsive design, and accessibility improvements."
+  ]
       },
       {
         "title": "Front-End Developer",
-        "company": "Arish University (Hybird)",
-        "period": "1 Year",
-        "details": [
-          "Designed a seamless, interactive user interface using HTML, CSS, and TypeScript.",
-          "Delivered responsive design for a flawless experience across all devices.",
-          "Enhanced UI/UX through performance optimization and modern layout techniques."
-        ]
+  "company": "Arish University (Hybrid)",
+  "period": "1 Year",
+  "details": [
+    "Developed dynamic and responsive web interfaces using Html , Scss - Bootstrap and JavaScript  to improve user engagement and usability.",
+    "Collaborated with backend teams to integrate RESTful APIs, ensuring smooth and efficient data flow between UI and server.",
+    "Optimized front-end performance through code refactoring, lazy loading, and reusable component design.",
+    "Implemented modern UI/UX best practices to create intuitive layouts compatible with desktop and mobile platforms.",
+    "Maintained version control using Git and participated in agile sprint reviews and code reviews for continuous improvement."
+  ]
       }
     ],
     "toolTitle": "My favourite tools",
