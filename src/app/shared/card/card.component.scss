@@ -1,7 +1,7 @@
 .card {
   border-radius: 30px;
   width: auto;
-   background: transparent;
+  background: transparent;
   .heading {
     padding: 25px 20px 0 20px;
     margin: 0;
@@ -10,7 +10,7 @@
       font-size: 30px;
       font-weight: 700;
       font-family: "Syne", sans-serif;
-     
+
       line-height: 1;
       color: #444;
       margin: 0;
@@ -41,86 +41,146 @@
     }
   }
 
- .talk-btn {
-  position: relative;
-  overflow: hidden;
-  font-weight: 600;
-  text-transform: none;
-  border-radius: 15px;
-  padding: 20px 30px;
-  background: linear-gradient(90deg, #7c3aed, #9333ea);
-  color: #fff;
-  font-size: 17px;
+  .talk-btn {
+    overflow: hidden;
+    font-weight: 600;
+    text-transform: none;
+    border-radius: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Syne", sans-serif;
+    width: 100%;
+    padding: 10px 7px;
+    margin: 15px 0;
 
-  cursor: pointer;
-  transition: all 0.1s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-      font-family: "Syne", sans-serif;
-
-  // width: 100%;
-
-  /* Inner layers for animation */
-  .front2,
-  .back2 {
-     
-    
+    color: #fff;
+     background: linear-gradient(90deg, #7c3aed, #9333ea);
+    .front2,
+    .back2 {
       display: flex;
       align-items: center;
       justify-content: center;
       transition: all 0.4s ease;
-  }
-
-  .front2 {
-    transform: translateY(0);
-    opacity: 1;
-    align-content: center;
-    align-items: center;
-    padding-top: 19px;
-  }
-
-  .back2 {
-    transform: translateY(100%);
-    opacity: 0;
-
-  }
-
-  /* ✨ Hover animation like social buttons */
-  &:hover {
-   
-  
+    }
 
     .front2 {
-      transform: translateY(-100%);
+      transform: translateY(0);
+      opacity: 1;
+      align-content: center;
+      align-items: center;
+      padding-top: 19px;
+    }
+
+    .back2 {
+      transform: translateY(100%);
       opacity: 0;
     }
 
-    .back2 {
-      transform: translateY(0);
-      opacity: 1;
+    /* ✨ Hover animation like social buttons */
+    &:hover {
+      .front2 {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
 
-          padding-bottom: 40px;
+      .back2 {
+        transform: translateY(0);
+        opacity: 1;
+
+        padding-bottom: 40px;
+      }
+    }
+
+    /* 🌟 Smooth transition reset */
+    &:not(:hover) {
+      .front2 {
+        transition-delay: 0.1s;
+      }
+      .back2 {
+        transition-delay: 0s;
+      }
+    }
+
+    &:active {
+      transform: scale(0.97);
     }
   }
 
-  /* 🌟 Smooth transition reset */
-  &:not(:hover) {
-    .front2 {
-      transition-delay: 0.1s;
-    }
-    .back2 {
-      transition-delay: 0s;
-    }
-  }
+  //   .talk-btn {
+  //     position: relative;
+  //     overflow: hidden;
+  //     font-weight: 600;
+  //     text-transform: none;
+  //     border-radius: 15px;
+  //     padding: 20px 30px;
+  //     background: linear-gradient(90deg, #7c3aed, #9333ea);
+  //     color: #fff;
+  //     font-size: 17px;
 
-  &:active {
-    transform: scale(0.97);
-  }
-}
+  //     cursor: pointer;
+  //     transition: all 0.1s ease;
+  //     display: inline-flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     font-family: "Syne", sans-serif;
 
+  //     // width: 100%;
 
+  //     /* Inner layers for animation */
+  //     .front2,
+  //     .back2 {
+  //       display: flex;
+  //       align-items: center;
+  //       justify-content: center;
+  //       transition: all 0.4s ease;
+  //     }
 
+  //     .front2 {
+  //       transform: translateY(0);
+  //       opacity: 1;
+  //       align-content: center;
+  //       align-items: center;
+  //       padding-top: 19px;
+  //     }
+
+  //     .back2 {
+  //       transform: translateY(100%);
+  //       opacity: 0;
+  //     }
+
+  //     /* ✨ Hover animation like social buttons */
+  //     &:hover {
+  //       .front2 {
+  //         transform: translateY(-100%);
+  //         opacity: 0;
+  //       }
+
+  //       .back2 {
+  //         transform: translateY(0);
+  //         opacity: 1;
+
+  //         padding-bottom: 40px;
+  //       }
+  //     }
+
+  //     /* 🌟 Smooth transition reset */
+  //     &:not(:hover) {
+  //       .front2 {
+  //         transition-delay: 0.1s;
+  //       }
+  //       .back2 {
+  //         transition-delay: 0s;
+  //       }
+  //     }
+
+  //     &:active {
+  //       transform: scale(0.97);
+  //     }
+  //   }
 }
 
 .social-buttons {
@@ -202,4 +262,26 @@
       font-size: 1.4rem;
     }
   }
+
+  // .action-button {
+  //   display: flex;
+  //   gap: 10px;
+  //   .action {
+  //     display: contents;
+  //     width: 100%;
+
+  //   }
+  // }
 }
+
+/* 📱 Responsive */
+// @media (min-width: 576px) {
+
+//   .action-button {
+//     display: flex;
+
+//     .action {
+//       display: flex;
+//     }
+//   }
+// }
