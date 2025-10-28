@@ -76,7 +76,7 @@
      ========================= */
   .mobile-nav {
     position: fixed;
-    bottom: 10px;
+    // bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
@@ -156,14 +156,14 @@
     .mobile-nav {
       display: flex !important;
       width: 60%;
-      //      bottom: 10px !important;
+           bottom: 10px !important;
       // left: 50%  !important;
     }
   }
   @media (min-width: 992px) {
     .mobile-nav {
       position: relative;
-      top: -48px;
+      bottom: 10px !important;
       width: 56%;
       left: 29%;
       height: 50px;
