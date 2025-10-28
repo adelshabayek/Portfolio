@@ -2,12 +2,14 @@
   border-radius: 30px;
   width: auto;
   background: transparent;
+  overflow: hidden;
+
   .heading {
     padding: 25px 20px 0 20px;
     margin: 0;
 
     h1 {
-      font-size: 30px;
+      // font-size: 30px;
       font-weight: 700;
       font-family: "Syne", sans-serif;
 
@@ -58,7 +60,7 @@
     margin: 15px 0;
 
     color: #fff;
-     background: linear-gradient(90deg, #7c3aed, #9333ea);
+    background: linear-gradient(90deg, #7c3aed, #9333ea);
     .front2,
     .back2 {
       display: flex;
@@ -109,78 +111,6 @@
       transform: scale(0.97);
     }
   }
-
-  //   .talk-btn {
-  //     position: relative;
-  //     overflow: hidden;
-  //     font-weight: 600;
-  //     text-transform: none;
-  //     border-radius: 15px;
-  //     padding: 20px 30px;
-  //     background: linear-gradient(90deg, #7c3aed, #9333ea);
-  //     color: #fff;
-  //     font-size: 17px;
-
-  //     cursor: pointer;
-  //     transition: all 0.1s ease;
-  //     display: inline-flex;
-  //     align-items: center;
-  //     justify-content: center;
-  //     font-family: "Syne", sans-serif;
-
-  //     // width: 100%;
-
-  //     /* Inner layers for animation */
-  //     .front2,
-  //     .back2 {
-  //       display: flex;
-  //       align-items: center;
-  //       justify-content: center;
-  //       transition: all 0.4s ease;
-  //     }
-
-  //     .front2 {
-  //       transform: translateY(0);
-  //       opacity: 1;
-  //       align-content: center;
-  //       align-items: center;
-  //       padding-top: 19px;
-  //     }
-
-  //     .back2 {
-  //       transform: translateY(100%);
-  //       opacity: 0;
-  //     }
-
-  //     /* ✨ Hover animation like social buttons */
-  //     &:hover {
-  //       .front2 {
-  //         transform: translateY(-100%);
-  //         opacity: 0;
-  //       }
-
-  //       .back2 {
-  //         transform: translateY(0);
-  //         opacity: 1;
-
-  //         padding-bottom: 40px;
-  //       }
-  //     }
-
-  //     /* 🌟 Smooth transition reset */
-  //     &:not(:hover) {
-  //       .front2 {
-  //         transition-delay: 0.1s;
-  //       }
-  //       .back2 {
-  //         transition-delay: 0s;
-  //       }
-  //     }
-
-  //     &:active {
-  //       transform: scale(0.97);
-  //     }
-  //   }
 }
 
 .social-buttons {
@@ -252,12 +182,43 @@
   }
 }
 
+/* 💻 Large Screens (≥1200px) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+/* 📱 Tablets (≤991px) */
+@media (max-width: 991px) {
+  // img {
+  //   // width: 100px;
+  // }
+
+  // .social-btn {
+  //   width: 15px !important;
+  //   height: 15px !important;
+  //      padding: 14px;
+
+  //   i {
+  //     font-size: 10px !important;
+  //   }
+  // }
+
+  // .talk-btn {
+  //   font-size: 9px !important;
+  //   padding: 5px !important;
+  // }
+
+
+}
+
 /* 📱 Responsive */
 @media (max-width: 576px) {
   .social-btn {
     width: 55px;
     height: 55px;
-
+ 
     i {
       font-size: 1.4rem;
     }

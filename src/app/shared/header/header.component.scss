@@ -3,12 +3,15 @@
   background: transparent;
   z-index: 1000;
   transition: all 0.3s ease;
+
   .container-fluid {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+   
   }
 
-  /* 🧭 Navigation Links */
+  /* 🧭 Desktop Navigation */
   .nav-links {
     display: flex;
     align-items: center;
@@ -18,100 +21,66 @@
       position: relative;
       text-decoration: none;
       color: #555;
-      font-weight: bold;
+      font-weight: 600;
       transition: all 0.3s ease;
-      padding-bottom: 4px;
-      font-size: 17px;
-      backdrop-filter: blur(15px);
-      padding: 13px 15px;
+      font-size: 16px;
+      padding: 10px 15px;
       border-radius: 20px;
-      letter-spacing: 1px;
-      z-index: 1111;
+      letter-spacing: 0.5px;
       cursor: pointer;
-      /* Hover effect */
+      backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
       &:hover {
-        color: #333;
-        transition: width 0.3s ease;
+        color: #222;
       }
 
-      /* Active link styling */
       &.active {
-        color: #333;
+        color: #222;
         border: 1px solid #999;
         border-radius: 20px;
       }
     }
   }
 
-  .theme-btn {
-    backdrop-filter: blur(15px);
-  }
-
-  /* 💬 Let's Talk Button */
+  /* 💬 Right Side Buttons */
   .talk-btn {
     font-weight: 600;
     text-transform: none;
     border-radius: 30px;
-    padding: 12px 28px;
+    padding: 10px 25px;
     background: linear-gradient(90deg, #7c3aed, #9333ea);
     color: #fff;
-    font-size: 16px;
-    letter-spacing: 0.3px;
+    font-size: 15px;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
     gap: 6px;
-    // transition: all 0.35s ease;
-
-    position: relative;
-    overflow: hidden;
-    isolation: isolate;
     font-family: "Syne", sans-serif;
-
-    /* ✨ Hover Animation */
-
-    &:active {
-      transform: scale(0.97);
-    }
 
     mat-icon {
       font-size: 18px;
-      transition: transform 0.35s ease;
     }
 
     &:hover mat-icon {
-      transform: rotate(15deg) scale(1.1);
-    }
-
-    /* 🪄 Animated Gradient Overlay */
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      background: linear-gradient(
-        120deg,
-        rgba(255, 255, 255, 0.25),
-        rgba(255, 255, 255, 0.05)
-      );
-      transform: translateX(-100%);
-      transition: transform 0.6s ease;
-      z-index: -1;
-    }
-
-    &:hover::before {
-      transform: translateX(0);
+      transform: rotate(10deg);
     }
   }
 
-  /* 📱 Mobile Navigation */
+  /* 🌗 Theme Button */
+  .theme-btn {
+    backdrop-filter: blur(10px);
+  }
+
+  /* =========================
+     📱 Mobile Navigation
+     ========================= */
   .mobile-nav {
     position: fixed;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    height: 38px;
+    height: 45px;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     display: flex;
@@ -131,15 +100,16 @@
         background: #333;
         text-align: center;
         justify-content: center;
-        scale: calc(1.5);
+        scale: calc(1.8);
         border-radius: 50%;
         font-size: 13px;
         align-content: center;
       }
       mat-icon {
-        font-size: 24px;
+        font-size: 27px;
         transition: transform 0.3s ease;
       }
+      
     }
 
     /* 💬 Talk Button (mobile) */
@@ -147,14 +117,14 @@
       background: #5b21b6;
       color: white;
       border-radius: 50%;
-      width: 35px;
-      height: 35px;
+      width: 43px;
+      height: 43px;
       display: flex;
       justify-content: center;
       align-items: center;
       transition: none;
       mat-icon {
-        font-size: 12px;
+        font-size: 15px;
         padding: 0;
         margin: 0;
         align-items: center;
@@ -163,25 +133,64 @@
     }
   }
 
-  /* 📱 Responsive Tweaks */
-  @media (max-width: 768px) {
-    .talk-btn {
-      display: none !important;
-    }
+  /* =========================
+     📏 RESPONSIVE VISIBILITY
+     ========================= */
 
-    .theme-btn {
+  /* Hide mobile nav for large screens (≥1200px) */
+  /* 🖥️ Desktop view (≥1200px): show container, hide mobile */
+  @media (min-width: 1200px) {
+    .container-fluid {
+      display: flex !important;
+    }
+    .mobile-nav {
       display: none !important;
     }
   }
-}
 
+  /* 📱 Mobile & Tablet (<1200px): show mobile, hide container */
+  @media (max-width: 1199px) {
+    .container-fluid {
+      display: none !important;
+    }
+    .mobile-nav {
+      display: flex !important;
+      width: 60%;
+      //      bottom: 10px !important;
+      // left: 50%  !important;
+    }
+  }
+  @media (min-width: 992px) {
+    .mobile-nav {
+      position: relative;
+      top: -48px;
+      width: 56%;
+      left: 29%;
+      height: 50px;
+    }
+  }
+  @media (max-width: 769px) {
+    // .container-fluid {
+    //   display: none !important;
+    // }
+
+    .mobile-nav {
+      bottom: 10px !important;
+      left: 50% !important;
+      transform: translateX(-50%);
+      width: 80% !important;
+      height: 38px !important;
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 25px;
+      background-color: rgba(0, 0, 0, 0.1);
+      z-index: 9999;
+    }
+  }
+}
 a {
-  text-decoration: none;
-}
-
-// ::ng-deep .mobile-nav button:active .mdc-icon-button,
-//     .mobile-nav button:hover .mdc-icon-button,
-//     .mobile-nav button:focus .mdc-icon-button {
-//        background-color: #333 !important;
-//         color: red;
-//       }
+        text-decoration: none !important;
+      }

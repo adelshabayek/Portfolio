@@ -54,6 +54,7 @@
   position: relative;
   margin-left: 25rem;
   padding-right: 2rem;
+  padding-left: 0;
 
   .app-2 {
     position: fixed;
@@ -86,12 +87,33 @@
   }
 }
 
+@media (max-width: 1199px) {
+  .side-content {
+    // margin-left: 0 !important;
+    // padding: 0 1rem;
+    .sections {
+      padding-right: 140px;
+    }
+    .app-2 {
+      position: fixed !important;
+      top: 78px !important;
+      width: 100%;
+    //   left: 190px;
+    //   background: rgba(255, 255, 255, 0.85);
+    //   backdrop-filter: blur(10px);
+    //   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 0;
+      z-index: 1000;
+    }
+  }
+}
+
 /* 📱 Tablets (≤991px) */
 @media (max-width: 991px) {
   .side-card .app-1 {
     position: relative !important;
 
-    left: 0;
+    left: 0 !important;
     width: 100%;
     margin-bottom: 1rem;
     transform: none !important;
@@ -100,15 +122,15 @@
   .side-content {
     margin-left: 0 !important;
     padding: 0 1rem;
+    .sections {
+      padding-right: 0;
+    }
 
     .app-2 {
-      position: sticky !important;
+      position: fixed !important;
       top: 0;
       left: 0;
       width: 100%;
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(10px);
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
       border-radius: 0;
       z-index: 1000;
     }
@@ -138,9 +160,7 @@
       left: 0;
       width: 100%;
       z-index: 1000;
-      background: rgba(255, 255, 255, 0.9);
-      border-top: 1px solid rgba(0, 0, 0, 0.08);
-      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+      // border-top: 1px solid rgba(0, 0, 0, 0.08);
       border-radius: 0;
     }
 
