@@ -18,6 +18,10 @@ import { ButtonModule } from 'primeng/button';
 import { ScrollAnimateDirective } from '../core/directives/scroll-animate.directive';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+// import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,10 @@ import { AnimateOnScrollModule } from 'primeng/animateonscroll';
     ButtonModule,
     CardModule,
     AnimateOnScrollModule,
-
+FormsModule,
+ReactiveFormsModule,
+MatFormFieldModule,
+MatInputModule
 
   ],
   exports: [ HeaderComponent,

@@ -7,12 +7,12 @@
   .heading {
     padding: 25px 20px 0 20px;
     margin: 0;
-
+    align-items: center;
     h1 {
       // font-size: 30px;
       font-weight: 700;
       font-family: "Syne", sans-serif;
-
+      font-size: 30px;
       line-height: 1;
       color: #444;
       margin: 0;
@@ -183,34 +183,51 @@
 }
 
 /* 💻 Large Screens (≥1200px) */
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 30px;
-  }
-}
+// @media (min-width: 1200px) {
+//   h1 {
+//     font-size: 30px;
+//   }
+// }
+// @media (max-width: 1200px) {
+//   h1 {
+//     font-size: 30px;
+//   }
+// }
 
 /* 📱 Tablets (≤991px) */
 @media (max-width: 991px) {
-  // img {
-  //   // width: 100px;
-  // }
+  img {
+    width: 110px;
+    height: 95px;
+  }
+  h1 {
+    font-size: 55px !important;
+  }
+}
+@media (max-width: 865px) {
+  h1 {
+    font-size: 45px !important;
+  }
+}
+@media (max-width: 730px) {
+  h1 {
+    font-size: 40px !important;
+  }
+}
 
-  // .social-btn {
-  //   width: 15px !important;
-  //   height: 15px !important;
-  //      padding: 14px;
-
-  //   i {
-  //     font-size: 10px !important;
-  //   }
-  // }
-
-  // .talk-btn {
-  //   font-size: 9px !important;
-  //   padding: 5px !important;
-  // }
-
-
+@media (max-width: 415px) {
+  h1 {
+    font-size: 36px !important;
+  }
+}
+@media (max-width: 389px) {
+  img {
+    width: 90px;
+    height: 70px;
+  }
+  h1 {
+    font-size: 30px !important;
+  }
 }
 
 /* 📱 Responsive */
@@ -218,31 +235,13 @@
   .social-btn {
     width: 55px;
     height: 55px;
- 
+
     i {
       font-size: 1.4rem;
     }
   }
-
-  // .action-button {
-  //   display: flex;
-  //   gap: 10px;
-  //   .action {
-  //     display: contents;
-  //     width: 100%;
-
-  //   }
-  // }
 }
 
 /* 📱 Responsive */
-// @media (min-width: 576px) {
-
-//   .action-button {
-//     display: flex;
-
-//     .action {
-//       display: flex;
-//     }
-//   }
-// }
+@media (min-width: 576px) {
+}

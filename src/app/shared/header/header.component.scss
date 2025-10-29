@@ -117,8 +117,9 @@
       background: #5b21b6;
       color: white;
       border-radius: 50%;
-      width: 38px;
-      height: 38px;
+      // width: 38px;
+      // height: 38px;
+       scale: calc(0.9);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -163,7 +164,7 @@
   @media (min-width: 992px) {
     .mobile-nav {
       position: relative;
-      bottom: 10px !important;
+      bottom: 0 !important;
       width: 56%;
       left: 29%;
       height: 50px;
